@@ -17,5 +17,7 @@ public class Dialog : ScriptableObject
 {
     public Character speakerLeft;
     public Character spreakerRight;
+    public Question question;
+    public Dialog nextDialog;
     public Line[] lines;
 }
