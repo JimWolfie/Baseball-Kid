@@ -1,10 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+
+[System.Serializable]
+public class QuestionEvent: UnityEvent<Question>{ };
 
 public class DDisplay : MonoBehaviour
 {
-    public Dialog conversation;
+    public Dialog dialog;
+    public QuestionEvent questionEvent;
     public GameObject speakerLeft;
     public GameObject speakerRight;
 
@@ -12,6 +17,14 @@ public class DDisplay : MonoBehaviour
     private DialogAdvancer rightUI;
 
     private int index = 0;
+    private bool dialogStarted = false;
+
+    public void ChangeDialog(Dialog nextDialog)
+    {
+        dialogStarted = false;
+        dialog = nextDialog;
+        AdvanceChat();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -19,8 +32,8 @@ public class DDisplay : MonoBehaviour
         leftUI = speakerLeft.GetComponent<DialogAdvancer>();
         rightUI = speakerRight.GetComponent<DialogAdvancer>();
 
-        leftUI.Speaker = conversation.speakerLeft;
-        rightUI.Speaker = conversation.spreakerRight;
+        leftUI.Speaker = dialog.speakerLeft;
+        rightUI.Speaker = dialog.spreakerRight;
         
     }
 
@@ -29,28 +42,45 @@ public class DDisplay : MonoBehaviour
     {
         if(Input.GetKeyDown("space"))
         {
-            AdvanceConversation();
+            AdvanceChat();
 
+        }else if(Input.GetKeyDown("x"))
+        {
+            EndDialog();
         }
     }
-
-    void AdvanceConversation()
+    private void EndDialog()
     {
-        if(index < conversation.lines.Length)
+        dialog = null;
+        dialogStarted = false;
+        leftUI.Hide();
+        rightUI.Hide();
+        
+    }
+    private void Initialize()
+    {
+        dialogStarted = true;
+        index = 0;
+        leftUI.Speaker = dialog.speakerLeft;
+        rightUI.Speaker = dialog.spreakerRight;
+    }
+    void AdvanceChat()
+    {
+        if(dialog == null ) return;
+        if(!dialogStarted) Initialize();
+        if(index < dialog.lines.Length)
         {
             DisplayLine();
             index +=1;
         } else
         {
-            leftUI.Hide();
-            rightUI.Hide();
-            index =0;
+         NextChat();
 
         }
     }
     void DisplayLine()
     {
-        Line line = conversation.lines[index];
+        Line line = dialog.lines[index];
         Character character = line.character;
 
         if(leftUI.SpeakerIs(character))
@@ -60,15 +90,27 @@ public class DDisplay : MonoBehaviour
         {
             SetLine(rightUI, leftUI, line.text);
         }
+        index+=1;
     }
-    void SetLine(
-        DialogAdvancer activeUI,
-        DialogAdvancer inactiveUI,
-        string text)
+    void NextChat()
+    {
+        if(dialog.question != null)
+        {
+            questionEvent.Invoke(dialog.question);
+            
+        }else if(dialog.nextDialog!=null){
+            ChangeDialog(dialog.nextDialog);
+
+        } else
+        {
+            EndDialog();
+        }
+    }
+    void SetLine(DialogAdvancer activeUI, DialogAdvancer inactiveUI, string text)
     {
         activeUI._Dialog = text;
         activeUI.Show();
         inactiveUI.Hide();
-
     }
+    
 }

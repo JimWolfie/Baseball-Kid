@@ -11,15 +11,11 @@ public struct Choice
     public string text;
     public Dialog dialog;
 }
-public class Question : MonoBehaviour
-{
-    
-
-    [CreateAssetMenu(fileName = "New Question", menuName = "Question")]
-    public class Dialog: ScriptableObject
-    {
+[CreateAssetMenu(fileName = "New Question", menuName = "Question")]
+public class Question : ScriptableObject
+{   
         [TextArea(2, 5)]
         public string text;
         public Choice[] choices;
-    }
+    
 }

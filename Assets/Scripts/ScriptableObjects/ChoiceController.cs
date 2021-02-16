@@ -26,6 +26,17 @@ public class ChoiceController : MonoBehaviour
         return choiceController;
     }
 
-    
-    
+    private void Start()
+    {
+        if (dialogChangeEvent == null)
+        {
+            dialogChangeEvent = new DialogChangeEvent();
+        }
+        GetComponent<Button>().GetComponentInChildren<Text>().text = choice.text;
+    }
+    public void MakeChoice()
+    {
+        dialogChangeEvent.Invoke(choice.dialog);
+    }
+
 }
