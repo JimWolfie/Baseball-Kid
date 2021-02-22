@@ -20,7 +20,7 @@ public class InventorySlot : ItemSlotUI, IDropHandler
     public ItemSlot ItemSlot
     {
         get {
-            return inventory.GetSlotByIndex(SlotIndex);
+            return inventory.InventoryController.GetSlotByIndex(SlotIndex);
         }
     }
 
@@ -31,7 +31,7 @@ public class InventorySlot : ItemSlotUI, IDropHandler
 
         if((itemDragHandler.ItemSlotUI as InventorySlot) != null)
         {//swapping consumables n stuff
-            inventory.Swap(itemDragHandler.ItemSlotUI.SlotIndex, SlotIndex);
+            inventory.InventoryController.Swap(itemDragHandler.ItemSlotUI.SlotIndex, SlotIndex);
         }
     }
     public override void UpdateSlotUI()

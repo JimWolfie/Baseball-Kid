@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 
+[CreateAssetMenu(fileName ="New Sundry", menuName ="consumable/sundry")]
 public class Sundry: Consumable
 {
     [Header("Sundry data")]
