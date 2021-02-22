@@ -10,8 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64251f0209d14564f805dc2522baa434, type: 3}
-  m_Name: New Sundry
+  m_Name: sundrytest
   m_EditorClassIdentifier: 
-  name: new inventory object
-  icon: {fileID: 0}
+  name: egg
+  icon: {fileID: 21300000, guid: 2ec48e7bb2fde1c42915939eb6c2f204, type: 3}
+  sellPrice: 1
+  maxStack: 10
   useText: does stuff
