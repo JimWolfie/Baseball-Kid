@@ -13,6 +13,7 @@ public struct ItemSlot
         this.quantity = quantity;
 
     }
+    //overrides for == and !=
     public static bool operator ==(ItemSlot a, ItemSlot b){return a.Equals(b);}
     public static bool operator !=(ItemSlot a, ItemSlot b) { return !a.Equals(b); }
 }
