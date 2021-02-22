@@ -25,8 +25,5 @@ public abstract class ItemSlotUI : MonoBehaviour, IDropHandler
 
     public abstract void UpdateSlotUI();
 
-    protected virtual void EnableSlotUI(bool enable)
-    {
-        iconImage.enabled = enable;
-    }
+    protected virtual void EnableSlotUI(bool enable) => iconImage.enabled = enable;
 }
