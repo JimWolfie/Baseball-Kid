@@ -17,12 +17,7 @@ public class InventorySlot : ItemSlotUI, IDropHandler
         set { }
     }
 
-    public ItemSlot ItemSlot
-    {
-        get {
-            return inventory.InventoryController.GetSlotByIndex(SlotIndex);
-        }
-    }
+    public ItemSlot ItemSlot => inventory.InventoryController.GetSlotByIndex(SlotIndex);
 
     public override void OnDrop(PointerEventData eventData)
     {

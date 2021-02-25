@@ -2,11 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using SOEvents;
 
 [RequireComponent(typeof (CanvasGroup))]
 public class ItemDragHandler : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler
 {
+    
     [SerializeField]protected ItemSlotUI itemSlotUI = null;
+    [SerializeField]protected InventoryObjectEvent onStartMouseOver = null;
+    [SerializeField]protected VoidEvent onMouseOverEnd= null;
+
     private CanvasGroup canvasGroup = null;
     private Transform orginalParent = null;
     private bool isHovering = false;
@@ -19,8 +24,9 @@ public class ItemDragHandler : MonoBehaviour, IPointerDownHandler, IDragHandler,
     {
         if(isHovering)
         {
+            onMouseOverEnd.Raise();
             isHovering=false;
-            //raise event
+            
         }
     }
 
@@ -28,7 +34,7 @@ public class ItemDragHandler : MonoBehaviour, IPointerDownHandler, IDragHandler,
     {
         if(eventData.button == PointerEventData.InputButton.Left)
         {
-            //raise event
+            onMouseOverEnd.Raise();//turn off the pop up!
             orginalParent = transform.parent; //store for later
             transform.SetParent(transform.parent.parent); //set parent two up
             canvasGroup.blocksRaycasts = false; //we care whatts bellow 
@@ -54,13 +60,13 @@ public class ItemDragHandler : MonoBehaviour, IPointerDownHandler, IDragHandler,
 
     public virtual void OnPointerEnter(PointerEventData eventData)
     {
-        //onRaise
+        onStartMouseOver.Raise(itemSlotUI.SlotItem);
         isHovering = true;
     }
 
     public virtual void OnPointerExit(PointerEventData eventData)
     {
-        //onRaise
+        onMouseOverEnd.Raise();
         isHovering = false;
     }
 }

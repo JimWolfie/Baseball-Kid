@@ -44,8 +44,9 @@ public class InventoryController :IItemContainer
                 if(item.quantity <= item.item.MaxStack)
                 {
                     itemSlots[i]= item;
-                    OnItemUpdated.Invoke();
+                    
                     item.quantity = 0;
+                    OnItemUpdated.Invoke();
                     return item;
                 }
             }else
@@ -134,6 +135,7 @@ public class InventoryController :IItemContainer
                 {
                     itemSlots[index2].quantity += firstItem.quantity;
                     itemSlots[index1] = new ItemSlot();
+                    OnItemUpdated.Invoke();
                     return;
                 }
                 
@@ -141,5 +143,6 @@ public class InventoryController :IItemContainer
         }
         itemSlots[index1] = secondItem;
         itemSlots[index2] = firstItem;
+        OnItemUpdated.Invoke();
     }
 }
