@@ -24,7 +24,7 @@ public class ItemDragHandler : MonoBehaviour, IPointerDownHandler, IDragHandler,
     {
         if(isHovering)
         {
-            onMouseOverEnd.Raise();
+            //onMouseOverEnd.Raise();
             isHovering=false;
             
         }
@@ -34,7 +34,7 @@ public class ItemDragHandler : MonoBehaviour, IPointerDownHandler, IDragHandler,
     {
         if(eventData.button == PointerEventData.InputButton.Left)
         {
-            onMouseOverEnd.Raise();//turn off the pop up!
+            //onMouseOverEnd.Raise();//turn off the pop up!
             orginalParent = transform.parent; //store for later
             transform.SetParent(transform.parent.parent); //set parent two up
             canvasGroup.blocksRaycasts = false; //we care whatts bellow 
@@ -60,13 +60,13 @@ public class ItemDragHandler : MonoBehaviour, IPointerDownHandler, IDragHandler,
 
     public virtual void OnPointerEnter(PointerEventData eventData)
     {
-        onStartMouseOver.Raise(itemSlotUI.SlotItem);
+        //onStartMouseOver.Raise(itemSlotUI.SlotItem);
         isHovering = true;
     }
 
     public virtual void OnPointerExit(PointerEventData eventData)
     {
-        onMouseOverEnd.Raise();
+        //onMouseOverEnd.Raise();
         isHovering = false;
     }
 }
