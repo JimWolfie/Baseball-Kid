@@ -379,6 +379,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemSlotUI: {fileID: 1283407475079676794}
-  onStartMouseOver: {fileID: 0}
-  onMouseOverEnd: {fileID: 0}
+  onStartMouseOver: {fileID: 11400000, guid: bdcffa5b5d2015246ad95aba67d5194c, type: 2}
+  onMouseOverEnd: {fileID: 11400000, guid: c17b89125c936ed409fe85f585fb7175, type: 2}
   itemDestroyer: {fileID: 0}
