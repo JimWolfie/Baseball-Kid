@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 21757099}
   - component: {fileID: 21757098}
   - component: {fileID: 21757097}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 272796366}
   - component: {fileID: 272796365}
   - component: {fileID: 272796364}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: tooltipbg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -350,10 +350,10 @@ RectTransform:
   m_Father: {fileID: 21757096}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -307.4, y: -340.7}
-  m_SizeDelta: {x: -706.61, y: 70.729996}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -706.61, y: 70.72998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &272796364
 MonoBehaviour:
@@ -408,7 +408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.16981131, g: 0.16981131, b: 0.16981131, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -860,7 +860,7 @@ GameObject:
   - component: {fileID: 2001574103}
   - component: {fileID: 2001574102}
   - component: {fileID: 2001574101}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: TooltipObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -15,6 +15,6 @@ MonoBehaviour:
   text: DO SHAD IS EAT EGG?
   choices:
   - text: DA
-    dialog: {fileID: 0}
+    dialog: {fileID: 11400000, guid: 16e57f2f824dba746835df0fbc56d1ef, type: 2}
   - text: NYET
-    dialog: {fileID: 0}
+    dialog: {fileID: 11400000, guid: 4f7ddda98112109408fea2849f8d9232, type: 2}
