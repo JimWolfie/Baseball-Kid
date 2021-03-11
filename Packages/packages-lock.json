@@ -1,5 +1,14 @@
 {
   "dependencies": {
+    "com.digitom.boltnodesinputsystem": {
+      "version": "https://gitlab.com/toomasio/boltnodesinputsystem.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.inputsystem": "1.0.1"
+      },
+      "hash": "5f005b947255c84a92e72e59078c53100f91ea5f"
+    },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,
