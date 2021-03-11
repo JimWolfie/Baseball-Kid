@@ -13,7 +13,7 @@ public class Sundry: Consumable
     {
         StringBuilder builder = new StringBuilder();
         builder.Append(Name).AppendLine();
-        builder.Append("<Color=green>Use: ").Append(useText).Append("</color").AppendLine();
+        builder.Append("<color=green>Use</color> : ").Append(useText).AppendLine();
         builder.Append("Max Stack: ").Append(MaxStack).AppendLine();
         builder.Append("Sell Price: ").Append(SellPrice).Append(" gold").AppendLine();
 
