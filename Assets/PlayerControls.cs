@@ -81,6 +81,22 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""ParadigmShift"",
+                    ""type"": ""Button"",
+                    ""id"": ""f2cdcdca-9235-4824-ad91-def3eaf4da5d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Dash"",
+                    ""type"": ""Button"",
+                    ""id"": ""8407166a-616f-4478-b0f0-678385e33be0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -226,31 +242,26 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
-                }
-            ]
-        },
-        {
-            ""name"": ""Menu"",
-            ""id"": ""91977212-ed55-4341-964f-e1626ebe1adb"",
-            ""actions"": [
-                {
-                    ""name"": ""New action"",
-                    ""type"": ""Button"",
-                    ""id"": ""a05f33aa-337f-4cc8-84f9-54096b71cfe4"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                }
-            ],
-            ""bindings"": [
+                },
                 {
                     ""name"": """",
-                    ""id"": ""2b5d95f8-a804-419c-bb0a-c722d2e302f8"",
-                    ""path"": """",
+                    ""id"": ""396d7d42-9681-49cb-bc6c-815b5bc5d65f"",
+                    ""path"": ""<Keyboard>/numpad6"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""New action"",
+                    ""groups"": ""Keyboard and Mouse"",
+                    ""action"": ""ParadigmShift"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2aa82383-2659-41c8-8b6d-80e5ac64db7e"",
+                    ""path"": ""<Keyboard>/numpad6"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard and Mouse"",
+                    ""action"": ""Dash"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -286,9 +297,8 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_Combat_GroundStarter = m_Combat.FindAction("Ground Starter", throwIfNotFound: true);
         m_Combat_GroundFinisher = m_Combat.FindAction("Ground Finisher", throwIfNotFound: true);
         m_Combat_Move = m_Combat.FindAction("Move", throwIfNotFound: true);
-        // Menu
-        m_Menu = asset.FindActionMap("Menu", throwIfNotFound: true);
-        m_Menu_Newaction = m_Menu.FindAction("New action", throwIfNotFound: true);
+        m_Combat_ParadigmShift = m_Combat.FindAction("ParadigmShift", throwIfNotFound: true);
+        m_Combat_Dash = m_Combat.FindAction("Dash", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -346,6 +356,8 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputAction m_Combat_GroundStarter;
     private readonly InputAction m_Combat_GroundFinisher;
     private readonly InputAction m_Combat_Move;
+    private readonly InputAction m_Combat_ParadigmShift;
+    private readonly InputAction m_Combat_Dash;
     public struct CombatActions
     {
         private @PlayerControls m_Wrapper;
@@ -358,6 +370,8 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         public InputAction @GroundStarter => m_Wrapper.m_Combat_GroundStarter;
         public InputAction @GroundFinisher => m_Wrapper.m_Combat_GroundFinisher;
         public InputAction @Move => m_Wrapper.m_Combat_Move;
+        public InputAction @ParadigmShift => m_Wrapper.m_Combat_ParadigmShift;
+        public InputAction @Dash => m_Wrapper.m_Combat_Dash;
         public InputActionMap Get() { return m_Wrapper.m_Combat; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -391,6 +405,12 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Move.started -= m_Wrapper.m_CombatActionsCallbackInterface.OnMove;
                 @Move.performed -= m_Wrapper.m_CombatActionsCallbackInterface.OnMove;
                 @Move.canceled -= m_Wrapper.m_CombatActionsCallbackInterface.OnMove;
+                @ParadigmShift.started -= m_Wrapper.m_CombatActionsCallbackInterface.OnParadigmShift;
+                @ParadigmShift.performed -= m_Wrapper.m_CombatActionsCallbackInterface.OnParadigmShift;
+                @ParadigmShift.canceled -= m_Wrapper.m_CombatActionsCallbackInterface.OnParadigmShift;
+                @Dash.started -= m_Wrapper.m_CombatActionsCallbackInterface.OnDash;
+                @Dash.performed -= m_Wrapper.m_CombatActionsCallbackInterface.OnDash;
+                @Dash.canceled -= m_Wrapper.m_CombatActionsCallbackInterface.OnDash;
             }
             m_Wrapper.m_CombatActionsCallbackInterface = instance;
             if (instance != null)
@@ -419,43 +439,16 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Move.started += instance.OnMove;
                 @Move.performed += instance.OnMove;
                 @Move.canceled += instance.OnMove;
+                @ParadigmShift.started += instance.OnParadigmShift;
+                @ParadigmShift.performed += instance.OnParadigmShift;
+                @ParadigmShift.canceled += instance.OnParadigmShift;
+                @Dash.started += instance.OnDash;
+                @Dash.performed += instance.OnDash;
+                @Dash.canceled += instance.OnDash;
             }
         }
     }
     public CombatActions @Combat => new CombatActions(this);
-
-    // Menu
-    private readonly InputActionMap m_Menu;
-    private IMenuActions m_MenuActionsCallbackInterface;
-    private readonly InputAction m_Menu_Newaction;
-    public struct MenuActions
-    {
-        private @PlayerControls m_Wrapper;
-        public MenuActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Newaction => m_Wrapper.m_Menu_Newaction;
-        public InputActionMap Get() { return m_Wrapper.m_Menu; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(MenuActions set) { return set.Get(); }
-        public void SetCallbacks(IMenuActions instance)
-        {
-            if (m_Wrapper.m_MenuActionsCallbackInterface != null)
-            {
-                @Newaction.started -= m_Wrapper.m_MenuActionsCallbackInterface.OnNewaction;
-                @Newaction.performed -= m_Wrapper.m_MenuActionsCallbackInterface.OnNewaction;
-                @Newaction.canceled -= m_Wrapper.m_MenuActionsCallbackInterface.OnNewaction;
-            }
-            m_Wrapper.m_MenuActionsCallbackInterface = instance;
-            if (instance != null)
-            {
-                @Newaction.started += instance.OnNewaction;
-                @Newaction.performed += instance.OnNewaction;
-                @Newaction.canceled += instance.OnNewaction;
-            }
-        }
-    }
-    public MenuActions @Menu => new MenuActions(this);
     private int m_KeyboardandMouseSchemeIndex = -1;
     public InputControlScheme KeyboardandMouseScheme
     {
@@ -475,9 +468,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         void OnGroundStarter(InputAction.CallbackContext context);
         void OnGroundFinisher(InputAction.CallbackContext context);
         void OnMove(InputAction.CallbackContext context);
-    }
-    public interface IMenuActions
-    {
-        void OnNewaction(InputAction.CallbackContext context);
+        void OnParadigmShift(InputAction.CallbackContext context);
+        void OnDash(InputAction.CallbackContext context);
     }
 }

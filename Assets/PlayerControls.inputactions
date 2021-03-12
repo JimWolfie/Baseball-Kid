@@ -68,6 +68,22 @@
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "ParadigmShift",
+                    "type": "Button",
+                    "id": "f2cdcdca-9235-4824-ad91-def3eaf4da5d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Dash",
+                    "type": "Button",
+                    "id": "8407166a-616f-4478-b0f0-678385e33be0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -213,31 +229,26 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
-                }
-            ]
-        },
-        {
-            "name": "Menu",
-            "id": "91977212-ed55-4341-964f-e1626ebe1adb",
-            "actions": [
-                {
-                    "name": "New action",
-                    "type": "Button",
-                    "id": "a05f33aa-337f-4cc8-84f9-54096b71cfe4",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                }
-            ],
-            "bindings": [
+                },
                 {
                     "name": "",
-                    "id": "2b5d95f8-a804-419c-bb0a-c722d2e302f8",
-                    "path": "",
+                    "id": "396d7d42-9681-49cb-bc6c-815b5bc5d65f",
+                    "path": "<Keyboard>/numpad6",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
-                    "action": "New action",
+                    "groups": "Keyboard and Mouse",
+                    "action": "ParadigmShift",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2aa82383-2659-41c8-8b6d-80e5ac64db7e",
+                    "path": "<Keyboard>/numpad6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard and Mouse",
+                    "action": "Dash",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
