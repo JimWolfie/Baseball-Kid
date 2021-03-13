@@ -81,6 +81,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
+<<<<<<< HEAD
                 },
                 {
                     ""name"": ""ParadigmShift"",
@@ -121,6 +122,8 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": ""Tap""
+=======
+>>>>>>> parent of 76f2371 (commit!)
                 }
             ],
             ""bindings"": [
@@ -255,8 +258,15 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
-                },
+                }
+            ]
+        },
+        {
+            ""name"": ""Menu"",
+            ""id"": ""91977212-ed55-4341-964f-e1626ebe1adb"",
+            ""actions"": [
                 {
+<<<<<<< HEAD
                     ""name"": """",
                     ""id"": ""ff79d7f6-c16a-45be-af0b-1ca21d33a6a3"",
                     ""path"": ""<Keyboard>/numpadPlus"",
@@ -267,14 +277,25 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
+=======
+                    ""name"": ""New action"",
+                    ""type"": ""Button"",
+                    ""id"": ""a05f33aa-337f-4cc8-84f9-54096b71cfe4"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+>>>>>>> parent of 76f2371 (commit!)
                 {
                     ""name"": """",
-                    ""id"": ""2aa82383-2659-41c8-8b6d-80e5ac64db7e"",
-                    ""path"": ""<Keyboard>/numpad6"",
+                    ""id"": ""2b5d95f8-a804-419c-bb0a-c722d2e302f8"",
+                    ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard and Mouse"",
-                    ""action"": ""Dash"",
+                    ""groups"": """",
+                    ""action"": ""New action"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -343,11 +364,17 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_Combat_GroundStarter = m_Combat.FindAction("Ground Starter", throwIfNotFound: true);
         m_Combat_GroundFinisher = m_Combat.FindAction("Ground Finisher", throwIfNotFound: true);
         m_Combat_Move = m_Combat.FindAction("Move", throwIfNotFound: true);
+<<<<<<< HEAD
         m_Combat_ParadigmShift = m_Combat.FindAction("ParadigmShift", throwIfNotFound: true);
         m_Combat_Dash = m_Combat.FindAction("Dash", throwIfNotFound: true);
         m_Combat_Sprint = m_Combat.FindAction("Sprint", throwIfNotFound: true);
         m_Combat_Crouch = m_Combat.FindAction("Crouch", throwIfNotFound: true);
         m_Combat_Slide = m_Combat.FindAction("Slide", throwIfNotFound: true);
+=======
+        // Menu
+        m_Menu = asset.FindActionMap("Menu", throwIfNotFound: true);
+        m_Menu_Newaction = m_Menu.FindAction("New action", throwIfNotFound: true);
+>>>>>>> parent of 76f2371 (commit!)
     }
 
     public void Dispose()
@@ -405,11 +432,14 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputAction m_Combat_GroundStarter;
     private readonly InputAction m_Combat_GroundFinisher;
     private readonly InputAction m_Combat_Move;
+<<<<<<< HEAD
     private readonly InputAction m_Combat_ParadigmShift;
     private readonly InputAction m_Combat_Dash;
     private readonly InputAction m_Combat_Sprint;
     private readonly InputAction m_Combat_Crouch;
     private readonly InputAction m_Combat_Slide;
+=======
+>>>>>>> parent of 76f2371 (commit!)
     public struct CombatActions
     {
         private @PlayerControls m_Wrapper;
@@ -422,11 +452,14 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         public InputAction @GroundStarter => m_Wrapper.m_Combat_GroundStarter;
         public InputAction @GroundFinisher => m_Wrapper.m_Combat_GroundFinisher;
         public InputAction @Move => m_Wrapper.m_Combat_Move;
+<<<<<<< HEAD
         public InputAction @ParadigmShift => m_Wrapper.m_Combat_ParadigmShift;
         public InputAction @Dash => m_Wrapper.m_Combat_Dash;
         public InputAction @Sprint => m_Wrapper.m_Combat_Sprint;
         public InputAction @Crouch => m_Wrapper.m_Combat_Crouch;
         public InputAction @Slide => m_Wrapper.m_Combat_Slide;
+=======
+>>>>>>> parent of 76f2371 (commit!)
         public InputActionMap Get() { return m_Wrapper.m_Combat; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -460,6 +493,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Move.started -= m_Wrapper.m_CombatActionsCallbackInterface.OnMove;
                 @Move.performed -= m_Wrapper.m_CombatActionsCallbackInterface.OnMove;
                 @Move.canceled -= m_Wrapper.m_CombatActionsCallbackInterface.OnMove;
+<<<<<<< HEAD
                 @ParadigmShift.started -= m_Wrapper.m_CombatActionsCallbackInterface.OnParadigmShift;
                 @ParadigmShift.performed -= m_Wrapper.m_CombatActionsCallbackInterface.OnParadigmShift;
                 @ParadigmShift.canceled -= m_Wrapper.m_CombatActionsCallbackInterface.OnParadigmShift;
@@ -475,6 +509,8 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Slide.started -= m_Wrapper.m_CombatActionsCallbackInterface.OnSlide;
                 @Slide.performed -= m_Wrapper.m_CombatActionsCallbackInterface.OnSlide;
                 @Slide.canceled -= m_Wrapper.m_CombatActionsCallbackInterface.OnSlide;
+=======
+>>>>>>> parent of 76f2371 (commit!)
             }
             m_Wrapper.m_CombatActionsCallbackInterface = instance;
             if (instance != null)
@@ -503,6 +539,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Move.started += instance.OnMove;
                 @Move.performed += instance.OnMove;
                 @Move.canceled += instance.OnMove;
+<<<<<<< HEAD
                 @ParadigmShift.started += instance.OnParadigmShift;
                 @ParadigmShift.performed += instance.OnParadigmShift;
                 @ParadigmShift.canceled += instance.OnParadigmShift;
@@ -518,10 +555,45 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Slide.started += instance.OnSlide;
                 @Slide.performed += instance.OnSlide;
                 @Slide.canceled += instance.OnSlide;
+=======
+>>>>>>> parent of 76f2371 (commit!)
             }
         }
     }
     public CombatActions @Combat => new CombatActions(this);
+
+    // Menu
+    private readonly InputActionMap m_Menu;
+    private IMenuActions m_MenuActionsCallbackInterface;
+    private readonly InputAction m_Menu_Newaction;
+    public struct MenuActions
+    {
+        private @PlayerControls m_Wrapper;
+        public MenuActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Newaction => m_Wrapper.m_Menu_Newaction;
+        public InputActionMap Get() { return m_Wrapper.m_Menu; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(MenuActions set) { return set.Get(); }
+        public void SetCallbacks(IMenuActions instance)
+        {
+            if (m_Wrapper.m_MenuActionsCallbackInterface != null)
+            {
+                @Newaction.started -= m_Wrapper.m_MenuActionsCallbackInterface.OnNewaction;
+                @Newaction.performed -= m_Wrapper.m_MenuActionsCallbackInterface.OnNewaction;
+                @Newaction.canceled -= m_Wrapper.m_MenuActionsCallbackInterface.OnNewaction;
+            }
+            m_Wrapper.m_MenuActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Newaction.started += instance.OnNewaction;
+                @Newaction.performed += instance.OnNewaction;
+                @Newaction.canceled += instance.OnNewaction;
+            }
+        }
+    }
+    public MenuActions @Menu => new MenuActions(this);
     private int m_KeyboardandMouseSchemeIndex = -1;
     public InputControlScheme KeyboardandMouseScheme
     {
@@ -541,10 +613,17 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         void OnGroundStarter(InputAction.CallbackContext context);
         void OnGroundFinisher(InputAction.CallbackContext context);
         void OnMove(InputAction.CallbackContext context);
+<<<<<<< HEAD
         void OnParadigmShift(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
         void OnSprint(InputAction.CallbackContext context);
         void OnCrouch(InputAction.CallbackContext context);
         void OnSlide(InputAction.CallbackContext context);
+=======
+    }
+    public interface IMenuActions
+    {
+        void OnNewaction(InputAction.CallbackContext context);
+>>>>>>> parent of 76f2371 (commit!)
     }
 }

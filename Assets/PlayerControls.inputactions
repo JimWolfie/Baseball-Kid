@@ -68,6 +68,7 @@
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
+<<<<<<< HEAD
                 },
                 {
                     "name": "ParadigmShift",
@@ -108,6 +109,8 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "Tap"
+=======
+>>>>>>> parent of 76f2371 (commit!)
                 }
             ],
             "bindings": [
@@ -242,8 +245,15 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
-                },
+                }
+            ]
+        },
+        {
+            "name": "Menu",
+            "id": "91977212-ed55-4341-964f-e1626ebe1adb",
+            "actions": [
                 {
+<<<<<<< HEAD
                     "name": "",
                     "id": "ff79d7f6-c16a-45be-af0b-1ca21d33a6a3",
                     "path": "<Keyboard>/numpadPlus",
@@ -254,14 +264,25 @@
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
+=======
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "a05f33aa-337f-4cc8-84f9-54096b71cfe4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+>>>>>>> parent of 76f2371 (commit!)
                 {
                     "name": "",
-                    "id": "2aa82383-2659-41c8-8b6d-80e5ac64db7e",
-                    "path": "<Keyboard>/numpad6",
+                    "id": "2b5d95f8-a804-419c-bb0a-c722d2e302f8",
+                    "path": "",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard and Mouse",
-                    "action": "Dash",
+                    "groups": "",
+                    "action": "New action",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
