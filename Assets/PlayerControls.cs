@@ -40,7 +40,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""id"": ""07d18c71-7b44-4a4e-9c15-d522e9aa3a18"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""Tap""
                 },
                 {
                     ""name"": ""Air Finisher"",
@@ -48,7 +48,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""id"": ""cd9c36b8-7adc-4b75-aa42-ded5db822a7f"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""Tap""
                 },
                 {
                     ""name"": ""Ground Extender"",
@@ -56,7 +56,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""id"": ""f3c769a5-3249-47f3-b845-18afbd67b7f5"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""Tap""
                 },
                 {
                     ""name"": ""Ground Starter"",
@@ -64,7 +64,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""id"": ""8a2e74c0-4fa6-4baf-95b5-a8d05bf8a579"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""Tap""
                 },
                 {
                     ""name"": ""Ground Finisher"",
@@ -72,7 +72,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""id"": ""297a72c5-08f0-48a7-b7f1-c751cdc225c3"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""Tap""
                 },
                 {
                     ""name"": ""Move"",
@@ -97,6 +97,30 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Sprint"",
+                    ""type"": ""Button"",
+                    ""id"": ""38ef81b5-887c-479d-ac5e-7a74211845e0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Crouch"",
+                    ""type"": ""Button"",
+                    ""id"": ""cbe4c2c3-e89c-4187-8809-438daa1e25ad"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Slide"",
+                    ""type"": ""Button"",
+                    ""id"": ""2a6323b1-f35b-4881-8e68-00d3d176fcf4"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Tap""
                 }
             ],
             ""bindings"": [
@@ -104,18 +128,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""c9dce4e1-2e88-4cc3-94ef-c48a55d284b8"",
                     ""path"": ""<Keyboard>/space"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard and Mouse"",
-                    ""action"": ""Jump"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""4b03d0e5-05ac-46d9-ae44-bbe6f4f2a2e9"",
-                    ""path"": ""<Keyboard>/numpad5"",
-                    ""interactions"": """",
+                    ""interactions"": ""Tap"",
                     ""processors"": """",
                     ""groups"": ""Keyboard and Mouse"",
                     ""action"": ""Jump"",
@@ -137,7 +150,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""62af7156-dcc1-404d-95f2-44d7c304a166"",
                     ""path"": ""<Keyboard>/numpad7"",
-                    ""interactions"": """",
+                    ""interactions"": ""Tap"",
                     ""processors"": """",
                     ""groups"": ""Keyboard and Mouse"",
                     ""action"": ""Air Starter"",
@@ -181,7 +194,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""886d4050-1021-4372-922f-2f079dfd5b14"",
                     ""path"": ""<Keyboard>/numpad3"",
-                    ""interactions"": """",
+                    ""interactions"": ""Tap"",
                     ""processors"": """",
                     ""groups"": ""Keyboard and Mouse"",
                     ""action"": ""Ground Finisher"",
@@ -245,12 +258,12 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""396d7d42-9681-49cb-bc6c-815b5bc5d65f"",
-                    ""path"": ""<Keyboard>/numpad6"",
-                    ""interactions"": """",
+                    ""id"": ""ff79d7f6-c16a-45be-af0b-1ca21d33a6a3"",
+                    ""path"": ""<Keyboard>/numpadPlus"",
+                    ""interactions"": ""Hold"",
                     ""processors"": """",
                     ""groups"": ""Keyboard and Mouse"",
-                    ""action"": ""ParadigmShift"",
+                    ""action"": ""Sprint"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -262,6 +275,39 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""processors"": """",
                     ""groups"": ""Keyboard and Mouse"",
                     ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""396d7d42-9681-49cb-bc6c-815b5bc5d65f"",
+                    ""path"": ""<Keyboard>/numpadMinus"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard and Mouse"",
+                    ""action"": ""ParadigmShift"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2c22d90b-3b54-441e-b8c7-de256511c405"",
+                    ""path"": ""<Keyboard>/numpad0"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard and Mouse"",
+                    ""action"": ""Crouch"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""43903b83-df6f-44ac-ab17-cb8961215f09"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard and Mouse"",
+                    ""action"": ""Slide"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -299,6 +345,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_Combat_Move = m_Combat.FindAction("Move", throwIfNotFound: true);
         m_Combat_ParadigmShift = m_Combat.FindAction("ParadigmShift", throwIfNotFound: true);
         m_Combat_Dash = m_Combat.FindAction("Dash", throwIfNotFound: true);
+        m_Combat_Sprint = m_Combat.FindAction("Sprint", throwIfNotFound: true);
+        m_Combat_Crouch = m_Combat.FindAction("Crouch", throwIfNotFound: true);
+        m_Combat_Slide = m_Combat.FindAction("Slide", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -358,6 +407,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputAction m_Combat_Move;
     private readonly InputAction m_Combat_ParadigmShift;
     private readonly InputAction m_Combat_Dash;
+    private readonly InputAction m_Combat_Sprint;
+    private readonly InputAction m_Combat_Crouch;
+    private readonly InputAction m_Combat_Slide;
     public struct CombatActions
     {
         private @PlayerControls m_Wrapper;
@@ -372,6 +424,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         public InputAction @Move => m_Wrapper.m_Combat_Move;
         public InputAction @ParadigmShift => m_Wrapper.m_Combat_ParadigmShift;
         public InputAction @Dash => m_Wrapper.m_Combat_Dash;
+        public InputAction @Sprint => m_Wrapper.m_Combat_Sprint;
+        public InputAction @Crouch => m_Wrapper.m_Combat_Crouch;
+        public InputAction @Slide => m_Wrapper.m_Combat_Slide;
         public InputActionMap Get() { return m_Wrapper.m_Combat; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -411,6 +466,15 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Dash.started -= m_Wrapper.m_CombatActionsCallbackInterface.OnDash;
                 @Dash.performed -= m_Wrapper.m_CombatActionsCallbackInterface.OnDash;
                 @Dash.canceled -= m_Wrapper.m_CombatActionsCallbackInterface.OnDash;
+                @Sprint.started -= m_Wrapper.m_CombatActionsCallbackInterface.OnSprint;
+                @Sprint.performed -= m_Wrapper.m_CombatActionsCallbackInterface.OnSprint;
+                @Sprint.canceled -= m_Wrapper.m_CombatActionsCallbackInterface.OnSprint;
+                @Crouch.started -= m_Wrapper.m_CombatActionsCallbackInterface.OnCrouch;
+                @Crouch.performed -= m_Wrapper.m_CombatActionsCallbackInterface.OnCrouch;
+                @Crouch.canceled -= m_Wrapper.m_CombatActionsCallbackInterface.OnCrouch;
+                @Slide.started -= m_Wrapper.m_CombatActionsCallbackInterface.OnSlide;
+                @Slide.performed -= m_Wrapper.m_CombatActionsCallbackInterface.OnSlide;
+                @Slide.canceled -= m_Wrapper.m_CombatActionsCallbackInterface.OnSlide;
             }
             m_Wrapper.m_CombatActionsCallbackInterface = instance;
             if (instance != null)
@@ -445,6 +509,15 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Dash.started += instance.OnDash;
                 @Dash.performed += instance.OnDash;
                 @Dash.canceled += instance.OnDash;
+                @Sprint.started += instance.OnSprint;
+                @Sprint.performed += instance.OnSprint;
+                @Sprint.canceled += instance.OnSprint;
+                @Crouch.started += instance.OnCrouch;
+                @Crouch.performed += instance.OnCrouch;
+                @Crouch.canceled += instance.OnCrouch;
+                @Slide.started += instance.OnSlide;
+                @Slide.performed += instance.OnSlide;
+                @Slide.canceled += instance.OnSlide;
             }
         }
     }
@@ -470,5 +543,8 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnParadigmShift(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
+        void OnSprint(InputAction.CallbackContext context);
+        void OnCrouch(InputAction.CallbackContext context);
+        void OnSlide(InputAction.CallbackContext context);
     }
 }

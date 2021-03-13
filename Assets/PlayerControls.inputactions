@@ -27,7 +27,7 @@
                     "id": "07d18c71-7b44-4a4e-9c15-d522e9aa3a18",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "Tap"
                 },
                 {
                     "name": "Air Finisher",
@@ -35,7 +35,7 @@
                     "id": "cd9c36b8-7adc-4b75-aa42-ded5db822a7f",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "Tap"
                 },
                 {
                     "name": "Ground Extender",
@@ -43,7 +43,7 @@
                     "id": "f3c769a5-3249-47f3-b845-18afbd67b7f5",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "Tap"
                 },
                 {
                     "name": "Ground Starter",
@@ -51,7 +51,7 @@
                     "id": "8a2e74c0-4fa6-4baf-95b5-a8d05bf8a579",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "Tap"
                 },
                 {
                     "name": "Ground Finisher",
@@ -59,7 +59,7 @@
                     "id": "297a72c5-08f0-48a7-b7f1-c751cdc225c3",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "Tap"
                 },
                 {
                     "name": "Move",
@@ -84,6 +84,30 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Sprint",
+                    "type": "Button",
+                    "id": "38ef81b5-887c-479d-ac5e-7a74211845e0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Crouch",
+                    "type": "Button",
+                    "id": "cbe4c2c3-e89c-4187-8809-438daa1e25ad",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Slide",
+                    "type": "Button",
+                    "id": "2a6323b1-f35b-4881-8e68-00d3d176fcf4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap"
                 }
             ],
             "bindings": [
@@ -91,18 +115,7 @@
                     "name": "",
                     "id": "c9dce4e1-2e88-4cc3-94ef-c48a55d284b8",
                     "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard and Mouse",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "4b03d0e5-05ac-46d9-ae44-bbe6f4f2a2e9",
-                    "path": "<Keyboard>/numpad5",
-                    "interactions": "",
+                    "interactions": "Tap",
                     "processors": "",
                     "groups": "Keyboard and Mouse",
                     "action": "Jump",
@@ -124,7 +137,7 @@
                     "name": "",
                     "id": "62af7156-dcc1-404d-95f2-44d7c304a166",
                     "path": "<Keyboard>/numpad7",
-                    "interactions": "",
+                    "interactions": "Tap",
                     "processors": "",
                     "groups": "Keyboard and Mouse",
                     "action": "Air Starter",
@@ -168,7 +181,7 @@
                     "name": "",
                     "id": "886d4050-1021-4372-922f-2f079dfd5b14",
                     "path": "<Keyboard>/numpad3",
-                    "interactions": "",
+                    "interactions": "Tap",
                     "processors": "",
                     "groups": "Keyboard and Mouse",
                     "action": "Ground Finisher",
@@ -232,12 +245,12 @@
                 },
                 {
                     "name": "",
-                    "id": "396d7d42-9681-49cb-bc6c-815b5bc5d65f",
-                    "path": "<Keyboard>/numpad6",
-                    "interactions": "",
+                    "id": "ff79d7f6-c16a-45be-af0b-1ca21d33a6a3",
+                    "path": "<Keyboard>/numpadPlus",
+                    "interactions": "Hold",
                     "processors": "",
                     "groups": "Keyboard and Mouse",
-                    "action": "ParadigmShift",
+                    "action": "Sprint",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -249,6 +262,39 @@
                     "processors": "",
                     "groups": "Keyboard and Mouse",
                     "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "396d7d42-9681-49cb-bc6c-815b5bc5d65f",
+                    "path": "<Keyboard>/numpadMinus",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard and Mouse",
+                    "action": "ParadigmShift",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2c22d90b-3b54-441e-b8c7-de256511c405",
+                    "path": "<Keyboard>/numpad0",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard and Mouse",
+                    "action": "Crouch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "43903b83-df6f-44ac-ab17-cb8961215f09",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard and Mouse",
+                    "action": "Slide",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
