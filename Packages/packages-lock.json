@@ -6,6 +6,7 @@
       "source": "builtin",
       "dependencies": {}
     },
+
     "com.unity.cinemachine": {
       "version": "2.6.3",
       "depth": 0,
