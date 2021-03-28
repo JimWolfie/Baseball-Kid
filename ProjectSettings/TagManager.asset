@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Platforms
   - Weapon
+  - enem
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - enem
+  - invulnerable
   - Ground
   - background
   - 
