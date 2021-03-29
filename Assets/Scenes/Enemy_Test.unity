@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 632606535}
   m_Layer: 6
   m_Name: PlayerNearby
-  m_TagString: enem
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -613,7 +613,7 @@ GameObject:
   - component: {fileID: 1415565342}
   m_Layer: 6
   m_Name: ground_collider
-  m_TagString: enem
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
