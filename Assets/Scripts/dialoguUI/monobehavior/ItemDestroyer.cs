@@ -11,7 +11,7 @@ public class ItemDestroyer : MonoBehaviour
     [SerializeField]private Inventory inventory = null;
     [SerializeField]private TextMeshProUGUI confirmText =null;
     [SerializeField]private GameObject player;
-    [SerializeField]private VoidEvent turnoff;
+    [SerializeField]private StringEvent attacking;
 
     private int slotIndex = 0;
 
@@ -26,19 +26,23 @@ public class ItemDestroyer : MonoBehaviour
 
         confirmText.text = $"n!";
         gameObject.SetActive(true);
-        turnoff.Raise();
+        attacking.Raise(n);
     }
-    public IEnumerator Wait()
+   /* public IEnumerator Wait()
     {
         yield return new WaitForEndOfFrame();
         Destroy();
         yield break;
+    }*/
+    public void DoThis()
+    {
+        Debug.Log("hello we are trying to attack");
+        CustomEvent.Trigger(player, n);
     }
 
     public void Destroy()
     {
-        Debug.Log("hello we are trying to attack");
-        CustomEvent.Trigger(player, n);
+        
 
         inventory.InventoryController.RemoveAt(slotIndex);
             gameObject.SetActive(false);

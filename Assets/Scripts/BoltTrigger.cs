@@ -9,11 +9,11 @@ public class BoltTrigger : MonoBehaviour
     
     public GameObject player;
 
-    public void attack()
+    public void attack(string attackName)
     {
        
 
-        CustomEvent.Trigger(player, "Attack1");
+        CustomEvent.Trigger(player, attackName);
     }
 
 
