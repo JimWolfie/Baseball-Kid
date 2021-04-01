@@ -8,8 +8,8 @@ using SOEvents;
 public class Inventory: ScriptableObject
 {
     [SerializeField] private VoidEvent onInventoryItemsUpdated = null;
-    [SerializeField] private ItemSlot testItemSlot = new ItemSlot();
-    [SerializeField] private ItemSlot reItemSlot = new ItemSlot();
+    [SerializeField] public ItemSlot[] testItemSlot;
+    
     public InventoryController InventoryController {get;} = new InventoryController(6);
 
     public void OnEnable()
@@ -20,13 +20,23 @@ public class Inventory: ScriptableObject
     {
         InventoryController.OnItemUpdated -= onInventoryItemsUpdated.Raise;
     }
-    [ContextMenu("test Add")]
-    public void TestAdd()
+    [ContextMenu("Test Add0")]
+    [SerializeField]public void testAddAttackone()
     {
-        InventoryController.AddItem(testItemSlot);
+        InventoryController.AddItem( testItemSlot[0]);
     }
-    public void QuestAdd()
+    [ContextMenu("Test Add1")]
+    [SerializeField]
+    public void testAddAttacktwo()
     {
-        InventoryController.AddItem(reItemSlot);
+        InventoryController.AddItem(testItemSlot[1]);
     }
+    [ContextMenu("Test Add3")]
+    [SerializeField]
+    public void testAddAttackthree()
+    {
+        InventoryController.AddItem(testItemSlot[2]);
+    }
+
+
 }

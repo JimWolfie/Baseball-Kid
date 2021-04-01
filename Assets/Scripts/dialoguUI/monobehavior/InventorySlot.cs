@@ -47,4 +47,5 @@ public class InventorySlot : ItemSlotUI, IDropHandler
         base.EnableSlotUI(enable);//does the icon
         itemQuantityText.enabled = enable;
     }
+    
 }

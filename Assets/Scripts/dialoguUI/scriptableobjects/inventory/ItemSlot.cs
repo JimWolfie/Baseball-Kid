@@ -1,13 +1,16 @@
 ﻿using UnityEngine;
 using System;
+using System.Collections.Generic;
 
 [Serializable]
 public struct ItemSlot  
 {
 
 //wrapper for consumables which are scriptable objects. 
+   
    public Consumable item;
    [Min(1)] public int quantity;
+   
 
     public ItemSlot(Consumable item, int quantity)
     {
@@ -15,6 +18,7 @@ public struct ItemSlot
         this.quantity = quantity;
 
     }
+   
 
    
     public override bool Equals(object obj)
@@ -23,7 +27,8 @@ public struct ItemSlot
         {
             return false;
         }
-        return this.item == itm.item;
+        
+        return this.item.GetHashCode() == obj.GetHashCode();
     }
 
     public override int GetHashCode()

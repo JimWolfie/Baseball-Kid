@@ -19,7 +19,7 @@ public class InventoryController :IItemContainer
         {
             if(itemSlots[i].item != null)
             {
-                if(itemSlots[i].item == item.item)
+                if(itemSlots[i].item.Name == item.item.Name)
                 {
                     Debug.Log(itemSlots[i].item.name);
                     Debug.Log(item.item.name);
@@ -37,6 +37,7 @@ public class InventoryController :IItemContainer
                         item.quantity -= remainingSpace;
                     }
                 }
+                
             }
         }
         for(int i = 0; i < itemSlots.Length; i++)
@@ -93,7 +94,32 @@ public class InventoryController :IItemContainer
         itemSlots[indexSlot]= new ItemSlot();
         OnItemUpdated.Invoke();
         return;
+    }/*
+    public void AddAt(ItemSlot item, int indexSlot)
+    {
+        if(indexSlot < 0 || indexSlot > itemSlots.Length -1){ return; }
+        var temp =itemSlots[indexSlot];
+
+        OnItemUpdated.Invoke();
+        return;
+
     }
+    public void AppendItem(ItemSlot item)
+    {
+        int l= itemSlots.Length;
+        Array.Resize(ref itemSlots, l+1);
+        for(int i = 0; i < itemSlots.Length; i++)
+        {
+            if(itemSlots[i]==null)
+            {
+                 AddAt(item, i);
+                 return;
+            }
+            
+        }
+         
+
+    }*/
 
     public void RemoveItem(ItemSlot item)
     {
@@ -157,5 +183,9 @@ public class InventoryController :IItemContainer
 		}
 		return true;
 	}
+    public void Activate(int index)
+    {
+        var attack = itemSlots[index].item;
+    }
     
 }
