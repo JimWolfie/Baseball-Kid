@@ -14,8 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onInventoryItemsUpdated: {fileID: 11400000, guid: 02dd1d137e0913a42b5fab76de90eb76, type: 2}
   testItemSlot:
-    item: {fileID: 11400000, guid: 2ca14de13735c9e48b6083561fcd7514, type: 2}
+  - item: {fileID: 11400000, guid: 5be5d7b0000cba2478dbde5fd48707b6, type: 2}
     quantity: 1
-  reItemSlot:
-    item: {fileID: 11400000, guid: 4f5cafb3f9b06c645809fc90f5d0ab66, type: 2}
+  - item: {fileID: 11400000, guid: d330e6b608765f84cbeb7f682d5da03e, type: 2}
+    quantity: 1
+  - item: {fileID: 11400000, guid: 4d53fb0899a704c47bfe953af74fbc77, type: 2}
+    quantity: 1
+  - item: {fileID: 11400000, guid: 5be5d7b0000cba2478dbde5fd48707b6, type: 2}
+    quantity: 1
+  - item: {fileID: 11400000, guid: d330e6b608765f84cbeb7f682d5da03e, type: 2}
+    quantity: 1
+  - item: {fileID: 11400000, guid: 4d53fb0899a704c47bfe953af74fbc77, type: 2}
     quantity: 1

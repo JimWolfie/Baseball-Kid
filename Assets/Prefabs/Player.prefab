@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4301025835199820557}
   - component: {fileID: 4301025835199820559}
   - component: {fileID: 4301025835199820556}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: FrontPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4301025835320751894}
   - component: {fileID: 4301025835320751897}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: SlideCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 4301025835739507791}
   - component: {fileID: 4301025835739507825}
   - component: {fileID: 4301025835739507790}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: AttackPoint
   m_TagString: Weapon
   m_Icon: {fileID: 0}
@@ -163,7 +163,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4301025835739507788}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.38599998, y: 0.049999997, z: 0}
+  m_LocalPosition: {x: 0.57, y: -0.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4301025836312472344}
@@ -216,7 +216,8 @@ GameObject:
   - component: {fileID: 4301025836312472346}
   - component: {fileID: 4301025836312472347}
   - component: {fileID: 432922876996232914}
-  m_Layer: 7
+  - component: {fileID: 1128673925}
+  m_Layer: 10
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -361,8 +362,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"Speed","value":{"$content":3.0,"$type":"System.Single"},"$version":"A"},{"name":"RunSpeed","value":{"$content":8.0,"$type":"System.Single"},"$version":"A"},{"name":"Sprinting","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"Moving","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"Grounded","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"BlockedLeft","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"BlockedRight","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"JumpCount","value":{"$content":2,"$type":"System.Int32"},"$version":"A"},{"name":"Falling","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"JumpForce","value":{"$content":11.0,"$type":"System.Single"},"$version":"A"},{"name":"WallSliding","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"WallSlideSpeed","value":{"$content":-1.0,"$type":"System.Single"},"$version":"A"},{"name":"WallJumpX","value":{"$content":5.0,"$type":"System.Single"},"$version":"A"},{"name":"WallJumpY","value":{"$content":12.0,"$type":"System.Single"},"$version":"A"},{"name":"CanSlide","value":{"$content":true,"$type":"System.Boolean"},"$version":"A"},{"name":"SlideSpeed","value":{"$content":10.0,"$type":"System.Single"},"$version":"A"},{"name":"SlideTime","value":{"$content":0.8,"$type":"System.Single"},"$version":"A"},{"name":"CanDash","value":{"$content":true,"$type":"System.Boolean"},"$version":"A"},{"name":"DashCooldown","value":{"$content":1.5,"$type":"System.Single"},"$version":"A"},{"name":"DashSpeed","value":{"$content":12.0,"$type":"System.Single"},"$version":"A"},{"name":"DashTime","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"CanAttack","value":{"$content":true,"$type":"System.Boolean"},"$version":"A"},{"name":"AttackCount","value":{"$content":0,"$type":"System.Int32"},"$version":"A"},{"name":"MaxComboDelay","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"AirAttack","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"PlayerHealth","value":{"$content":8,"$type":"System.Int32"},"$version":"A"},{"name":"Dead","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"LoopEnded","value":{"$content":true,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
+    _json: '{"declarations":{"collection":{"$content":[{"name":"Speed","value":{"$content":3.0,"$type":"System.Single"},"$version":"A"},{"name":"RunSpeed","value":{"$content":8.0,"$type":"System.Single"},"$version":"A"},{"name":"Sprinting","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"Moving","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"Grounded","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"BlockedLeft","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"BlockedRight","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"JumpCount","value":{"$content":2,"$type":"System.Int32"},"$version":"A"},{"name":"Falling","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"JumpForce","value":{"$content":11.0,"$type":"System.Single"},"$version":"A"},{"name":"WallSliding","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"WallSlideSpeed","value":{"$content":-1.0,"$type":"System.Single"},"$version":"A"},{"name":"WallJumpX","value":{"$content":5.0,"$type":"System.Single"},"$version":"A"},{"name":"WallJumpY","value":{"$content":12.0,"$type":"System.Single"},"$version":"A"},{"name":"CanSlide","value":{"$content":true,"$type":"System.Boolean"},"$version":"A"},{"name":"SlideSpeed","value":{"$content":10.0,"$type":"System.Single"},"$version":"A"},{"name":"SlideTime","value":{"$content":0.8,"$type":"System.Single"},"$version":"A"},{"name":"CanDash","value":{"$content":true,"$type":"System.Boolean"},"$version":"A"},{"name":"DashCooldown","value":{"$content":1.5,"$type":"System.Single"},"$version":"A"},{"name":"DashSpeed","value":{"$content":12.0,"$type":"System.Single"},"$version":"A"},{"name":"DashTime","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"CanAttack","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"AttackCount","value":{"$content":0,"$type":"System.Int32"},"$version":"A"},{"name":"MaxComboDelay","value":{"$content":0.8,"$type":"System.Single"},"$version":"A"},{"name":"AirAttack","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"PlayerHealth","value":{"$content":8,"$type":"System.Int32"},"$version":"A"},{"name":"Dead","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"LoopEnded","value":{"$content":true,"$type":"System.Boolean"},"$version":"A"},{"name":"OnMenuUpdated","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"ReloadTime","value":{"$content":0.1,"$type":"System.Single"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 0}
 --- !u!114 &4301025836312472347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,7 +393,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0e02ebaa4eae349b13036a2358e50b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 4301025836312472341}
+--- !u!114 &1128673925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4301025836312472341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f692f5a2446ec3740b810220527e6177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: fc3cebf02761c3249a571ac06596032a, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 432922876996232914}
+        m_TargetAssemblyTypeName: BoltTrigger, Assembly-CSharp
+        m_MethodName: attack
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4301025836680811768
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,7 +434,7 @@ GameObject:
   - component: {fileID: 4301025836680811770}
   - component: {fileID: 4301025836680811772}
   - component: {fileID: 4301025836680811773}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: FeetPosition
   m_TagString: Player
   m_Icon: {fileID: 0}

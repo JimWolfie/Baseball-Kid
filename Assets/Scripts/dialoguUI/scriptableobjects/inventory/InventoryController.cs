@@ -18,9 +18,9 @@ public class InventoryController :IItemContainer
         for(int i = 0; i < itemSlots.Length; i++)
         {
             if(itemSlots[i].item != null)
-            {
+            {//if not empty
                 if(itemSlots[i].item == item.item)
-                {
+                {//if same item
                     Debug.Log(itemSlots[i].item.name);
                     Debug.Log(item.item.name);
                     int remainingSpace = itemSlots[i].item.MaxStack - itemSlots[i].quantity;
@@ -36,11 +36,13 @@ public class InventoryController :IItemContainer
                         itemSlots[i].quantity += remainingSpace;
                         item.quantity -= remainingSpace;
                     }
-                }
-            }
+                }//end if same item
+                
+            }//end if not empty
         }
         for(int i = 0; i < itemSlots.Length; i++)
         {
+
             if(itemSlots[i].item == null)
             {
                 if(item.quantity <= item.item.MaxStack)
@@ -51,12 +53,14 @@ public class InventoryController :IItemContainer
                     OnItemUpdated.Invoke();
                     return item;
                 }
-            }else
-            {
-                itemSlots[i] = new ItemSlot(item.item, item.item.MaxStack);
-                item.quantity -= item.item.MaxStack;
+                else
+                {
+                    itemSlots[i] = new ItemSlot(item.item, item.item.MaxStack);
+                    item.quantity -= item.item.MaxStack;
+                }
             }
         }
+    
         OnItemUpdated.Invoke();
         return item;
     }
@@ -93,7 +97,32 @@ public class InventoryController :IItemContainer
         itemSlots[indexSlot]= new ItemSlot();
         OnItemUpdated.Invoke();
         return;
+    }/*
+    public void AddAt(ItemSlot item, int indexSlot)
+    {
+        if(indexSlot < 0 || indexSlot > itemSlots.Length -1){ return; }
+        var temp =itemSlots[indexSlot];
+
+        OnItemUpdated.Invoke();
+        return;
+
     }
+    public void AppendItem(ItemSlot item)
+    {
+        int l= itemSlots.Length;
+        Array.Resize(ref itemSlots, l+1);
+        for(int i = 0; i < itemSlots.Length; i++)
+        {
+            if(itemSlots[i]==null)
+            {
+                 AddAt(item, i);
+                 return;
+            }
+            
+        }
+         
+
+    }*/
 
     public void RemoveItem(ItemSlot item)
     {
@@ -157,5 +186,9 @@ public class InventoryController :IItemContainer
 		}
 		return true;
 	}
+    public void Activate(int index)
+    {
+        var attack = itemSlots[index].item;
+    }
     
 }
