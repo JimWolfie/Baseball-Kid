@@ -27,6 +27,8 @@ public class ItemDestroyer : MonoBehaviour
 
         confirmText.text = $"n!";
         gameObject.SetActive(true);
+        //to do
+        //seperate the logic if we're in combat or not. 
         attacking.Raise(n);
         turnoff.Raise();
     }

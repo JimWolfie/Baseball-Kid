@@ -18,9 +18,9 @@ public class InventoryController :IItemContainer
         for(int i = 0; i < itemSlots.Length; i++)
         {
             if(itemSlots[i].item != null)
-            {
-                if(itemSlots[i].item.Name == item.item.Name)
-                {
+            {//if not empty
+                if(itemSlots[i].item == item.item)
+                {//if same item
                     Debug.Log(itemSlots[i].item.name);
                     Debug.Log(item.item.name);
                     int remainingSpace = itemSlots[i].item.MaxStack - itemSlots[i].quantity;
@@ -36,12 +36,13 @@ public class InventoryController :IItemContainer
                         itemSlots[i].quantity += remainingSpace;
                         item.quantity -= remainingSpace;
                     }
-                }
+                }//end if same item
                 
-            }
+            }//end if not empty
         }
         for(int i = 0; i < itemSlots.Length; i++)
         {
+
             if(itemSlots[i].item == null)
             {
                 if(item.quantity <= item.item.MaxStack)
@@ -52,12 +53,14 @@ public class InventoryController :IItemContainer
                     OnItemUpdated.Invoke();
                     return item;
                 }
-            }else
-            {
-                itemSlots[i] = new ItemSlot(item.item, item.item.MaxStack);
-                item.quantity -= item.item.MaxStack;
+                else
+                {
+                    itemSlots[i] = new ItemSlot(item.item, item.item.MaxStack);
+                    item.quantity -= item.item.MaxStack;
+                }
             }
         }
+    
         OnItemUpdated.Invoke();
         return item;
     }
