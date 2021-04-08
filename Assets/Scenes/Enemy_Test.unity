@@ -423,8 +423,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
+    _json: '{"declarations":{"collection":{"$content":[{"name":"Parent","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 1408634007}
 --- !u!1 &632606532
 GameObject:
   m_ObjectHideFlags: 0
@@ -5559,7 +5560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"Deadhalf","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"alivehalf","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"bottom","value":{"$content":2,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"top","value":{"$content":3,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"DeadSprite","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"alivehalf","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"bottom","value":{"$content":2,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"top","value":{"$content":3,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 1801982640}
     - {fileID: 1828578013}
