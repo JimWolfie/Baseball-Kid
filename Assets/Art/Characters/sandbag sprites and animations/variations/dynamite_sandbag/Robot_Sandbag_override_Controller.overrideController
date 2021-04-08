@@ -7,5 +7,21 @@ AnimatorOverrideController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Robot_Sandbag_override_Controller
-  m_Controller: {fileID: 0}
-  m_Clips: []
+  m_Controller: {fileID: 9100000, guid: cebe84033e9b34e4cba324ee84d43ddd, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: d7aa1695e00758842861099929d2e1b9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 58822327e9ecf66428e0f24d2e40f5a5, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 19ee864141d21be4db72f2c0d76c1458, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4527c3e6941dadf46bf6a58a31442c5c, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ac3c59c093c2a304e979cf82b21b486b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6b2e39c292a6f9f49853715aa5ec641b, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 279b0cc4d55c5cb4ea0d916477e27620, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 843297541bd8cd145ab886054bf102ec, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a66c5ef83af9dc248abdc434d1062934, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c87474f79e2c72447b2607f2c2c3cdd5, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1eb1dca07436f304999fb408fb4b1710, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b28e3ee669fb88d4faa31ca8bb5f256a, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 4b6ef26488ca97641be353d8b0aa77fe, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 699ef238bd02fb64080d5a830c36c711, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d02590b58cf594b498f060fb6d7441a0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 76d541703c02d104fac0a84557b3be28, type: 2}
