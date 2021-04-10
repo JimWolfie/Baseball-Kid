@@ -7,5 +7,5 @@ AnimatorOverrideController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Legs_Sandbag_OverRide_Controller
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cebe84033e9b34e4cba324ee84d43ddd, type: 2}
   m_Clips: []
