@@ -6,7 +6,7 @@ AnimatorOverrideController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Robot_Sandbag_override_Controller
+  m_Name: Dynamite_Sandbag_override_Controller
   m_Controller: {fileID: 9100000, guid: cebe84033e9b34e4cba324ee84d43ddd, type: 2}
   m_Clips:
   - m_OriginalClip: {fileID: 7400000, guid: d7aa1695e00758842861099929d2e1b9, type: 2}
