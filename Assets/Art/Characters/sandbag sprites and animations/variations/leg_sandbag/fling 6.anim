@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: fling 2
+  m_Name: fling 6
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -63,7 +63,7 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 9be824db5be5a5b4bae0e5b577d22d5b, type: 3}
+      value: {fileID: 21300000, guid: b7cba099b80b7cd4b8c70352e5d7a0b8, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -90,7 +90,7 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 9be824db5be5a5b4bae0e5b577d22d5b, type: 3}
+    - {fileID: 21300000, guid: b7cba099b80b7cd4b8c70352e5d7a0b8, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
