@@ -439,6 +439,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SandPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 117195163965558782, guid: 94d90a57efa74104892c27f0c4ef5209, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94d90a57efa74104892c27f0c4ef5209, type: 3}
 --- !u!1 &8413599281184001249
@@ -6102,7 +6106,7 @@ Animator:
   m_GameObject: {fileID: 8413599282400556351}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: 6c0841643e9327842bd649dbd684e892, type: 2}
+  m_Controller: {fileID: 22100000, guid: fbe6c51775f7dd140b29796857b414b4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -6179,7 +6183,7 @@ MonoBehaviour:
   _data:
     _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
     _objectReferences:
-    - {fileID: 11400000, guid: 16ebc9c1d07ae484799a9f353eda72aa, type: 2}
+    - {fileID: 11400000, guid: 3ea4deef2b32b4047b01d11dd1a5bcdc, type: 2}
 --- !u!114 &8413599282400556342
 MonoBehaviour:
   m_ObjectHideFlags: 0
