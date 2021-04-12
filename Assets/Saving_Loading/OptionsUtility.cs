@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Bolt;
+using Ludiq;
 
-public class OptionsUtility : MonoBehaviour
+public class OptionsUtility: MonoBehaviour
 {
     public int timeScalePrefs = 1;
+
     
 
     void Pause()
@@ -18,10 +21,18 @@ public class OptionsUtility : MonoBehaviour
     }
     void SetSpeed(int preferedScale)
     {
-        if(preferedScale <= 0) return;
-        timeScalePrefs = preferedScale;
+        if(preferedScale <= 0)
+            return;
+        PlayerPrefs.SetFloat("GameSpeed", preferedScale);
         Time.timeScale = preferedScale;
     }
+
+    public float ReturnSpeed()
+    {
+        return PlayerPrefs.GetFloat("GameSpeed");
+    }
+
+    
 
     #region resolution windowed
 
@@ -39,23 +50,23 @@ public class OptionsUtility : MonoBehaviour
     }
     void SetResolutionWindowed_1920_1080()
     {
-        SetResolutionWindowed(1920,1080);
+        SetResolutionWindowed(1920, 1080);
     }
     void SetResolutionWindowed_1600_900()
     {
-        SetResolutionWindowed(1600,900);
+        SetResolutionWindowed(1600, 900);
     }
     void SetResolutionWindowed_1366_768()
     {
-        SetResolutionWindowed(1366,768);
+        SetResolutionWindowed(1366, 768);
     }
     void SetResolutionWindowed_1280_720()
     {
-        SetResolutionWindowed(1280,720);
+        SetResolutionWindowed(1280, 720);
     }
     void SetResolutionWindowed_1024_576()
     {
-        SetResolutionWindowed(1024,576);
+        SetResolutionWindowed(1024, 576);
     }
 
     #endregion
@@ -99,5 +110,8 @@ public class OptionsUtility : MonoBehaviour
 
 
 
+    #region attack dmg
 
+
+    #endregion
 }
