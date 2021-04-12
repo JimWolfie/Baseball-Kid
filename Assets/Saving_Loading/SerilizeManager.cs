@@ -4,52 +4,36 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 
-public class SerilizeManager : MonoBehaviour
+public static class SerilizeManager 
 {
-    public static bool Save(string saveName, SaveData saveData)
+    public static void SaveJsonData(IEnumerable<ISaveable> Saveables)
     {
-        string json = JsonUtility.ToJson(saveData);
-
-        if(!Directory.Exists(Application.persistentDataPath +"/saves"))
+        SaveData sd = new SaveData();
+        foreach(var saveable in Saveables)
         {
-            Directory.CreateDirectory(Application.persistentDataPath +"/saves");
+            saveable.PopulateSaveData(sd);
         }
-        string path = Application.persistentDataPath +"/saves/"+ saveName + ".save";
 
-        
-        return true;
-    }
-
-    public static object Load(string path)
-    {
-        if(!File.Exists(path))
+        if(FileManager.WriteToFile("SaveData01.dat", sd.ToJson()))
         {
-            return null;
-        }
-        BinaryFormatter formatter = GetBinaryFormatter();
-        FileStream file = File.Open(path, FileMode.Open);
-
-        try
-        {
-            object save = formatter.Deserialize(file);
-            file.Close();
-            return save;
-        } catch
-        {
-            Debug.LogErrorFormat("Failed to load file at {0}", path);
-            file.Close();
-            return null;
+            Debug.Log("Save successful");
         }
     }
-    public static BinaryFormatter GetBinaryFormatter()
+
+    public static void LoadJsonData(IEnumerable<ISaveable> Saveables)
     {
-        BinaryFormatter formatter = new BinaryFormatter();
-        return formatter;
+        if(FileManager.LoadFromFile("SaveData01.dat", out var json))
+        {
+            SaveData sd = new SaveData();
+            sd.LoadFromJson(json);
+
+            foreach(var saveable in Saveables)
+            {
+                saveable.LoadFromSaveData(sd);
+            }
+
+            Debug.Log("Load complete");
+        }
     }
 
-    public void savePrefs()
-    {
-
-    }
- 
 }
