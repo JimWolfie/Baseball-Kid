@@ -323,7 +323,7 @@ MonoBehaviour:
   _data:
     _json: '{"declarations":{"collection":{"$content":[{"name":"Weakness","value":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"$version":"A"},{"name":"EnemyHealth","value":{"$content":10.0,"$type":"System.Single"},"$version":"A"},{"name":"AttackType","value":{"$content":0,"$type":"System.Int32"},"$version":"A"},{"name":"AirAttack","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"DMG","value":{"$content":0,"$type":"System.Int32"},"$version":"A"},{"name":"MLT","value":{"$content":0,"$type":"System.Int32"},"$version":"A"},{"name":"second
       hit","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"ObjectSide","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"Grounded","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"PlayerNearby","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"Parent","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"move
-      anyway","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"flatCollider","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"AttackRadius","value":{"$content":2,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"LastHit","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"DistanceToPlayer","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      anyway","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"flatCollider","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"AttackRadius","value":{"$content":2,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"LastHit","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"DistanceToPlayer","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"DamagOnAttack","value":{"$content":2,"$type":"System.Int32"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 117195163965558782}
     - {fileID: 117195162647758093}
@@ -1052,7 +1052,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &117195163965558781
 Transform:
   m_ObjectHideFlags: 0
