@@ -197,7 +197,7 @@ GameObject:
   - component: {fileID: 1192264317}
   - component: {fileID: 1192264318}
   m_Layer: 0
-  m_Name: treesback
+  m_Name: back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -257,7 +257,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -11
-  m_Sprite: {fileID: 21300000, guid: 39fe0353371efc8449875c24493477f4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e6ef9da8fd4e29e44a3b94360dfb6678, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -355,7 +355,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -9
-  m_Sprite: {fileID: 21300000, guid: b039e64da3365814fa66924d4bfcd57d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d47edcbd12fc07a49a312719edb8e7ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -17068,7 +17068,7 @@ GameObject:
   - component: {fileID: 2042676529}
   - component: {fileID: 2042676531}
   m_Layer: 0
-  m_Name: treesfront
+  m_Name: buildingsfront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17129,7 +17129,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -10
-  m_Sprite: {fileID: 21300000, guid: f643d72221d60334196143234b8b3dcd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fac3a036ac4bdff49bfb578fe930f7c8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
