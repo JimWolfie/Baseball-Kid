@@ -1,43 +1,60 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Spawner : MonoBehaviour
 {
-    public Spawnablesx _enemyList;
+    public testing_container _enemyList;
    
-    public List<EnemySpawnPoint> remaining;
+    public int index;
     public int totalE;
     public float delay_between_waves;
-    public int _waveCount;
+    
     public string Next_Scene_By_Name;
+    List<AsyncOperation> scenesToLoad = new List<AsyncOperation>();
 
-    private void Awake()
+    private void OnEnable()
+    {
+        index =0;
+        totalE = _enemyList.enemyListering.Count;
+    }
+   
+   
+
+    void SpawnNew(int i)
     {
         
-    }
-    private void Start()
-    {
-        LoadRemaining();
+        var q = _enemyList.enemyListering[i];
+        var u = q.enemy;
+        Instantiate(u, new Vector3(q.x, q.y, 0), Quaternion.identity);
+        
     }
 
-    public void LoadRemaining()
+    public void Reload(string nextScene)
     {
-        var ee = _enemyList;
-        foreach(EnemySpawnPoint e in ee.enemyArray)
+        scenesToLoad.Add(SceneManager.UnloadSceneAsync("PlayerControllerScene"));
+        scenesToLoad.Add(SceneManager.LoadSceneAsync("PlayerControllerScene"));
+        scenesToLoad.Add(SceneManager.LoadSceneAsync(nextScene, LoadSceneMode.Additive));
+       
+       StartCoroutine(sadTime());
+    }
+    public IEnumerator sadTime()
+    {
+        for(int i = 0; i<scenesToLoad.Count; ++i)
         {
-            
-            remaining.Add(e);
+            yield return null;
         }
-        totalE = remaining.Count;
-
-
     }
-
-    void spawnNew(float x, float y)
+    public void somethingDied()
     {
-        GameObject g = new GameObject();
-        g.transform.position = new Vector2(x, y);
-        
+        index++;
+        if(index >= totalE)
+        {
+            Reload(Next_Scene_By_Name);
+        } else
+        {
+            SpawnNew(index);
+        }
     }
 }
