@@ -29,7 +29,7 @@ AnimationClip:
       value: {fileID: 21300000, guid: f8ca9f5840b02e74d860177f2b6bfdff, type: 3}
     - time: 0.33333334
       value: {fileID: 21300000, guid: 970d53806f0a84f4bbb55c8cf86ffc8b, type: 3}
-    - time: 0.5833333
+    - time: 0.41666666
       value: {fileID: 21300000, guid: 970d53806f0a84f4bbb55c8cf86ffc8b, type: 3}
     attribute: m_Sprite
     path: 
@@ -61,7 +61,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1
+    m_StopTime: 0.5
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -88,21 +88,21 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.5833333
+  - time: 0.33333334
     functionName: TriggerAnimationEvent
     data: Lunge
     objectReferenceParameter: {fileID: 0}
     floatParameter: 10
     intParameter: 0
     messageOptions: 0
-  - time: 0.9166667
+  - time: 0.41666666
     functionName: TriggerAnimationEvent
     data: falldown
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 1
+  - time: 0.5
     functionName: TriggerAnimationEvent
     data: FinishedAttacking
     objectReferenceParameter: {fileID: 0}

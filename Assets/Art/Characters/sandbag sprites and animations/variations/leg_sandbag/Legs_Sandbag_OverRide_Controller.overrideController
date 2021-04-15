@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Legs_Sandbag_OverRide_Controller
+  m_Controller: {fileID: 9100000, guid: cebe84033e9b34e4cba324ee84d43ddd, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: d7aa1695e00758842861099929d2e1b9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 9e27208a8f6f3af4ba7ebe5e42ced066, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 19ee864141d21be4db72f2c0d76c1458, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ec4560c26e13ece4392376345f9da4b8, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ac3c59c093c2a304e979cf82b21b486b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 00bc64c5b1ba9a645b173db54a7a9c34, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 279b0cc4d55c5cb4ea0d916477e27620, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 0f1bfe834150cc044915b332a793f839, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a66c5ef83af9dc248abdc434d1062934, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 51f1809301f65314a9660c166db75ca7, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1eb1dca07436f304999fb408fb4b1710, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3e1e6d0e0293e7d47b5d0fa969184839, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 4b6ef26488ca97641be353d8b0aa77fe, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ea8f4819e959b1047b835613fdced22d, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d02590b58cf594b498f060fb6d7441a0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3da685309d43f96489b2ae846f6dc1e9, type: 2}
