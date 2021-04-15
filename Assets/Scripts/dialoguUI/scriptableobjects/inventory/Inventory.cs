@@ -38,5 +38,5 @@ public class Inventory: ScriptableObject
         InventoryController.AddItem(testItemSlot[2]);
     }
 
-
+   
 }
