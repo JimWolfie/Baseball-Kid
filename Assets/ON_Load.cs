@@ -16,16 +16,19 @@ public class ON_Load : MonoBehaviour
 	List<AsyncOperation> scenesToLoad = new List<AsyncOperation>();
 	
 
-	public void StartGame()
+	public void StartNewGame()
 	{
 		HideMenu();
 		ShowLoadingScreen();
-		scenesToLoad.Add(SceneManager.LoadSceneAsync("SampleScene"));
 		
-		StartCoroutine(LoadingScrene());
+        scenesToLoad.Add(SceneManager.LoadSceneAsync("PlayerControllerScene"));
+        scenesToLoad.Add(SceneManager.LoadSceneAsync("Base1_Forest", LoadSceneMode.Additive));
+        StartCoroutine(LoadingScrene());
 		
 		
 	}
+
+    
 	public void HideMenu()
 	{
 		menu.SetActive(false);
