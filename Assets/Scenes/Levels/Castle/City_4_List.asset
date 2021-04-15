@@ -10,12 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0dc36a4a555bd14e9e34e136416ffab, type: 3}
-  m_Name: City_2_List
+  m_Name: City_4_List
   m_EditorClassIdentifier: 
   enemyArray:
   - Arm_Sandbag_Prefab
-  - Arm_Sandbag_Prefab
-  - Arm_Sandbag_Prefab
-  - Arm_Sandbag_Prefab
-  - Arm_Sandbag_Prefab
-  - Arm_Sandbag_Prefab
+  - SandPrefab
+  - SandPrefab
