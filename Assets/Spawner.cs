@@ -7,8 +7,8 @@ public class Spawner : MonoBehaviour
 {
     public testing_container _enemyList;
    
-    public int index;
-    public int totalE;
+    private int index;
+    private int totalE;
     public float delay_between_waves;
     
     public string Next_Scene_By_Name;
@@ -49,7 +49,7 @@ public class Spawner : MonoBehaviour
     public void somethingDied()
     {
         index++;
-        if(index >= totalE)
+        if(index > totalE)
         {
             Reload(Next_Scene_By_Name);
         } else
