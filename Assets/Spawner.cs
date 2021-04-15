@@ -34,7 +34,7 @@ public class Spawner : MonoBehaviour
     public void Reload(string nextScene)
     {
         scenesToLoad.Add(SceneManager.UnloadSceneAsync("PlayerControllerScene"));
-        scenesToLoad.Add(SceneManager.LoadSceneAsync("PlayerControllerScene"));
+        scenesToLoad.Add(SceneManager.LoadSceneAsync("PlayerControllerScene", LoadSceneMode.Single));
         scenesToLoad.Add(SceneManager.LoadSceneAsync(nextScene, LoadSceneMode.Additive));
        
        StartCoroutine(sadTime());
