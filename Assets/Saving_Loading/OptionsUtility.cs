@@ -3,23 +3,100 @@ using System.Collections.Generic;
 using UnityEngine;
 using Bolt;
 using Ludiq;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using SOEvents;
 
 public class OptionsUtility: MonoBehaviour
 {
-    public int timeScalePrefs = 1;
-
+    public static int timeScalePrefs;
+    public static bool isPaused;
+    public static bool isOptions;
+    public VoidEvent toggleOptions;
+    public  VoidEvent togglePause;
     
 
-    void Pause()
+    
+    public void Pause()
     {
-        Time.timeScale = 0;
+        if(isPaused == true)
+        {
+            StartCoroutine(LoadUnPause());
+            Time.timeScale = timeScalePrefs;
+            togglePause.Raise();
+            
+        }
+        if(isPaused == false)
+        {
+            Time.timeScale = 0;
+            togglePause.Raise();
+            StartCoroutine(LoadPause());
+        }
+        
+    }
+    public void Options()
+    {
+        if(isPaused == true)
+        {
+            StartCoroutine(LoadUnOptions());
+            Time.timeScale = timeScalePrefs;
+            toggleOptions.Raise();
+
+        }
+        if(isPaused == false)
+        {
+            Time.timeScale = 0;
+            toggleOptions.Raise();
+            StartCoroutine(LoadOptions());
+        }
+
+    }
+   
+    
+    public  IEnumerator LoadPause()
+    {
+        AsyncOperation loader = SceneManager.LoadSceneAsync("Pause_Menu", LoadSceneMode.Additive);
+
+        while(!loader.isDone)
+        {
+            yield return null;
+        }
+
+    }
+     public IEnumerator LoadUnPause()
+    {
+        AsyncOperation loader = SceneManager.UnloadSceneAsync("Pause_Menu");
+
+
+        while(!loader.isDone)
+        {
+            yield return null;
+        }
+
     }
 
-    void Resume()
+    public IEnumerator LoadOptions()
     {
-        Time.timeScale = timeScalePrefs;
+        AsyncOperation loader = SceneManager.LoadSceneAsync("Options", LoadSceneMode.Additive);
+
+        while(!loader.isDone)
+        {
+            yield return null;
+        }
+
     }
-    void SetSpeed(int preferedScale)
+    public IEnumerator LoadUnOptions()
+    {
+        AsyncOperation loader = SceneManager.UnloadSceneAsync("Options");
+
+
+        while(!loader.isDone)
+        {
+            yield return null;
+        }
+    }
+
+        void SetSpeed(int preferedScale)
     {
         if(preferedScale <= 0)
             return;
@@ -114,4 +191,6 @@ public class OptionsUtility: MonoBehaviour
 
 
     #endregion
+
+    
 }
