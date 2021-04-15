@@ -12,7 +12,7 @@ public class Spawnablesx : ScriptableObject
    
 }
 [Serializable]
-public struct EnemySpawnPoint
+public class EnemySpawnPoint
 {
     public string Name;
     public float x;
