@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b432ce67c6600f24990e91a8d7925e89, type: 3}
-  m_Name: base4_enemylist
+  m_Name: base3_enemylist
   m_EditorClassIdentifier: 
   enemyListering:
-  - enemy: {fileID: 117195163965558782, guid: 94d90a57efa74104892c27f0c4ef5209, type: 3}
-    x: 0
-    y: -4
-  - enemy: {fileID: 117195163965558782, guid: 94d90a57efa74104892c27f0c4ef5209, type: 3}
-    x: 38
-    y: 0
-  - enemy: {fileID: 117195163965558782, guid: 94d90a57efa74104892c27f0c4ef5209, type: 3}
-    x: 32
-    y: 1
-  - enemy: {fileID: 117195163965558782, guid: 94d90a57efa74104892c27f0c4ef5209, type: 3}
-    x: 14
-    y: 0
   - enemy: {fileID: 5444869264894945848, guid: 78ee97b80cdffbf4da47b52bd82c5ad2, type: 3}
-    x: 14
+    x: -5
     y: 0
+  - enemy: {fileID: 117195163965558782, guid: 94d90a57efa74104892c27f0c4ef5209, type: 3}
+    x: 0.5
+    y: -0.8
+  - enemy: {fileID: 5444869264894945848, guid: 78ee97b80cdffbf4da47b52bd82c5ad2, type: 3}
+    x: 16
+    y: -0.8
+  - enemy: {fileID: 117195163965558782, guid: 94d90a57efa74104892c27f0c4ef5209, type: 3}
+    x: 30
+    y: 4
+  - enemy: {fileID: 5444869264894945848, guid: 78ee97b80cdffbf4da47b52bd82c5ad2, type: 3}
+    x: 25
+    y: 4
