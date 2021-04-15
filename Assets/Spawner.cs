@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Spawnablesx _enemyList;
+    
+    public List<EnemySpawnPoint> remaining;
+
+    
+
+    private void Awake()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void loadRemaining()
     {
+        var ee = _enemyList;
         
     }
 }
