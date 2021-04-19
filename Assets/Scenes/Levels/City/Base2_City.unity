@@ -243,6 +243,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1811000564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1811000565}
+  m_Layer: 0
+  m_Name: StartPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1811000565
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811000564}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.59, y: -9.46, z: 6.475978}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2002196670
 GameObject:
   m_ObjectHideFlags: 0
@@ -12167,7 +12197,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileSpriteIndex: 20
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -27430,8 +27460,8 @@ Tilemap:
   - m_RefCount: 2681
     m_Data: {fileID: 11400000, guid: a846ea0a3dff958458475ca3628b4821, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 1
-    m_Data: {fileID: -5780632102698111280, guid: 13b01db528411c84eb5357fef88f0e2e, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 16
     m_Data: {fileID: -5780632102698111280, guid: 099827dd5af001a409bf80343e26297e, type: 3}
   - m_RefCount: 221
@@ -27470,8 +27500,8 @@ Tilemap:
     m_Data: {fileID: -4781632266331361549, guid: 13b01db528411c84eb5357fef88f0e2e, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -3634651458372415803, guid: 13b01db528411c84eb5357fef88f0e2e, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -5780632102698111280, guid: 13b01db528411c84eb5357fef88f0e2e, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 2709
     m_Data:
