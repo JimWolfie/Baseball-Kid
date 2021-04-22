@@ -154,6 +154,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyList: {fileID: 11400000, guid: eb4ea292a0b97ea4cb6df27fa9ba0a80, type: 2}
+  index: 0
+  totalE: 0
   delay_between_waves: 0
   Next_Scene_By_Name: Enemy_Test
 --- !u!4 &105567757
@@ -466,12 +468,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 117195162435504168, guid: 94d90a57efa74104892c27f0c4ef5209, type: 3}
-      propertyPath: _data._json
-      value: '{"declarations":{"collection":{"$content":[{"name":"Weakness","value":{"$content":0,"$type":"System.Int32"},"$version":"A"},{"name":"EnemyHealth","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"AttackType","value":{"$content":0,"$type":"System.Int32"},"$version":"A"},{"name":"AirAttack","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"DMG","value":{"$content":0,"$type":"System.Int32"},"$version":"A"},{"name":"MLT","value":{"$content":0,"$type":"System.Int32"},"$version":"A"},{"name":"second
-        hit","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"ObjectSide","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"Grounded","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"PlayerNearby","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"Parent","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"move
-        anyway","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"flatCollider","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"AttackRadius","value":{"$content":2,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"LastHit","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"DistanceToPlayer","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"DamagOnAttack","value":{"$content":2,"$type":"System.Int32"},"$version":"A"},{"name":"Footises","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-      objectReference: {fileID: 0}
     - target: {fileID: 117195163965558781, guid: 94d90a57efa74104892c27f0c4ef5209, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -519,10 +515,6 @@ PrefabInstance:
     - target: {fileID: 117195163965558782, guid: 94d90a57efa74104892c27f0c4ef5209, type: 3}
       propertyPath: m_Name
       value: SandPrefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 117195163965558782, guid: 94d90a57efa74104892c27f0c4ef5209, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94d90a57efa74104892c27f0c4ef5209, type: 3}
@@ -583,7 +575,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8225473595403989431, guid: bb366bd010832f94597d78a53c829143, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8225473597171021409, guid: bb366bd010832f94597d78a53c829143, type: 3}
       propertyPath: _data._json
@@ -711,7 +703,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4430629973352155803, guid: 5bf914a4f9b905e43b6cbfde6590a2de, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bf914a4f9b905e43b6cbfde6590a2de, type: 3}
