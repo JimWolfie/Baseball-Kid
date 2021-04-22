@@ -29,6 +29,9 @@ public class ScenesData: ScriptableObject
     
     public AreaType _AreaType;
 
+    [SerializeField]
+    public ScenesData nextDB;
+
     /*
      * Levels
      */
@@ -45,7 +48,13 @@ public class ScenesData: ScriptableObject
         }
         //reset the index if we have no more levels
         else
+        {
             CurrentLevelIndex =1;
+            Debug.Log("we did it all died");
+
+            //nextDB.NewGame();
+        }
+            
     }
     //Start next level
     public void NextLevel()

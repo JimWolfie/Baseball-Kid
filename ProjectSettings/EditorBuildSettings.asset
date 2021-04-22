@@ -17,5 +17,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Enemy_Test.unity
     guid: c8e735701314f534a84e8c53fc68639c
+  - enabled: 1
+    path: Assets/Scenes/Levels/Forest/Base1_Forest.unity
+    guid: 9b1e72862ab797340b357468bfcb8782
+  - enabled: 1
+    path: Assets/Scenes/Levels/Forest/Base2_Forest.unity
+    guid: b0f2da03e4222a54fb51a6c52b94af92
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: aa9ca5fac52331e469576fc8b3dd7753, type: 2}

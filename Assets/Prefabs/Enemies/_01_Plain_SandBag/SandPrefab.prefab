@@ -1025,12 +1025,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"DeadSprite","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"alivehalf","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"bottom","value":{"$content":2,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"top","value":{"$content":3,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"DeadSprite","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"alivehalf","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"bottom","value":{"$content":2,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"top","value":{"$content":3,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"EnemyDead","value":{"$content":4,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 117195162576410118}
     - {fileID: 117195162435504161}
     - {fileID: 117195163491704241}
     - {fileID: 117195162075192026}
+    - {fileID: 11400000, guid: ae14e21a7586f894eaca1c345ee7769f, type: 2}
 --- !u!114 &117195163965558783
 MonoBehaviour:
   m_ObjectHideFlags: 0

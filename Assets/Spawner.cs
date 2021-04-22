@@ -24,7 +24,7 @@ public class Spawner : MonoBehaviour
    
    
 
-    IEnumerator SpawnNew(int i)
+    void SpawnNew(int i)
     {
         
         var q = _enemyList.enemyListering[i];
@@ -32,8 +32,8 @@ public class Spawner : MonoBehaviour
         Debug.Log(q.enemy.name);
         Debug.Log(q.x);
         Debug.Log(q.y);
-        yield return new WaitForSeconds(5f);
-        yield return Instantiate(u, new Vector3(q.x, q.y, 0), Quaternion.identity);
+        
+        Instantiate(u, new Vector3(q.x, q.y, 0), Quaternion.identity);
 
     }
 
