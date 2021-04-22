@@ -9,27 +9,28 @@ using SOEvents;
 
 public class OptionsUtility: MonoBehaviour
 {
-    public static int timeScalePrefs;
-    public static bool isPaused;
-    public static bool isOptions;
-    public VoidEvent toggleOptions;
-    public  VoidEvent togglePause;
-    
+    [SerializeField]
+    public OptionsSO options;
+    //public VoidEvent toggleOptions;
+    //public  VoidEvent togglePause;
 
-    
+    public bool isPaused => options.isPaused;
+    public bool isOptions => options.isOptions;
+    public int timeScalePrefs => options.timeScalePrefs;
+
     public void Pause()
     {
         if(isPaused == true)
         {
             StartCoroutine(LoadUnPause());
             Time.timeScale = timeScalePrefs;
-            togglePause.Raise();
+            //togglePause.Raise();
             
         }
         if(isPaused == false)
         {
             Time.timeScale = 0;
-            togglePause.Raise();
+            //togglePause.Raise();
             StartCoroutine(LoadPause());
         }
         
@@ -40,13 +41,13 @@ public class OptionsUtility: MonoBehaviour
         {
             StartCoroutine(LoadUnOptions());
             Time.timeScale = timeScalePrefs;
-            toggleOptions.Raise();
+            //toggleOptions.Raise();
 
         }
         if(isPaused == false)
         {
             Time.timeScale = 0;
-            toggleOptions.Raise();
+            //toggleOptions.Raise();
             StartCoroutine(LoadOptions());
         }
 
@@ -109,13 +110,22 @@ public class OptionsUtility: MonoBehaviour
         return PlayerPrefs.GetFloat("GameSpeed");
     }
 
-    
+    public void toggleWindowed()
+    {
+        if(options.windowMode.Equals(FullScreenMode.Windowed)){
+            options.windowMode = FullScreenMode.FullScreenWindow;
+        }else if(options.windowMode.Equals(FullScreenMode.FullScreenWindow))
+        {
+            options.windowMode = FullScreenMode.Windowed;
+        }
+    }
 
     #region resolution windowed
 
     void SetResolutionWindowed(int width, int height)
     {
-        Screen.SetResolution(width, height, FullScreenMode.Windowed);
+        options.ResolutionSet(width, height);
+        Screen.SetResolution(width, height, options.windowMode);
     }
     void SetResolutionWindowed_3840_2160()
     {
@@ -151,7 +161,8 @@ public class OptionsUtility: MonoBehaviour
 
     void SetResolutionFullScreen(int width, int height)
     {
-        Screen.SetResolution(width, height, FullScreenMode.FullScreenWindow);
+        options.ResolutionSet(width, height);
+        Screen.SetResolution(width, height, options.windowMode);
     }
     void SetResolutionFullScreen_3840_2160()
     {
