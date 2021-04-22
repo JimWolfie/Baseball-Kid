@@ -5,5 +5,5 @@ using UnityEngine;
 [CreateAssetMenu(fileName ="scenes in build", menuName = "scene builder")]
 public class LoaderObject : ScriptableObject
 {
-    List<string> scenesCurrentlyLoaded
+    List<string> scenesCurrentlyLoaded = new List<string>();
 }
