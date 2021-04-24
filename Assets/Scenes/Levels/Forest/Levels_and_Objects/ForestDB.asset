@@ -15,7 +15,8 @@ MonoBehaviour:
   levels:
   - {fileID: 11400000, guid: ecf5cced9fffd2c45ab88df59e6bae05, type: 2}
   - {fileID: 11400000, guid: e95839f1d0f6aec4383e23d9ef11a831, type: 2}
+  - {fileID: 11400000, guid: e95839f1d0f6aec4383e23d9ef11a831, type: 2}
   menus: []
-  CurrentLevelIndex: 0
+  CurrentLevelIndex: 2
   _AreaType: 0
   nextDB: {fileID: 11400000, guid: 01a7bd09f83f54d48a3649492f25a8ca, type: 2}

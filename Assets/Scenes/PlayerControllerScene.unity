@@ -288,6 +288,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63e877525d2e164439bd615cce5c673a, type: 3}
+--- !u!4 &377273419
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673474225}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &378089142
 GameObject:
   m_ObjectHideFlags: 3
@@ -498,13 +512,24 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1128673924 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4301025836312472341, guid: b7bb5c13283898c4aaa208150f965aed, type: 3}
   m_PrefabInstance: {fileID: 1344619287}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1128673926 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 432922876996232914, guid: b7bb5c13283898c4aaa208150f965aed, type: 3}
+  m_PrefabInstance: {fileID: 1344619287}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128673924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba0e02ebaa4eae349b13036a2358e50b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1128673931 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4301025836312472344, guid: b7bb5c13283898c4aaa208150f965aed, type: 3}
@@ -517,6 +542,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 407644684857274096, guid: b7bb5c13283898c4aaa208150f965aed, type: 3}
+      propertyPath: unityEventResponse.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 407644684857274096, guid: b7bb5c13283898c4aaa208150f965aed, type: 3}
+      propertyPath: unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 407644684857274096, guid: b7bb5c13283898c4aaa208150f965aed, type: 3}
+      propertyPath: unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1128673926}
+    - target: {fileID: 407644684857274096, guid: b7bb5c13283898c4aaa208150f965aed, type: 3}
+      propertyPath: unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 407644684857274096, guid: b7bb5c13283898c4aaa208150f965aed, type: 3}
+      propertyPath: unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: death
+      objectReference: {fileID: 0}
+    - target: {fileID: 407644684857274096, guid: b7bb5c13283898c4aaa208150f965aed, type: 3}
+      propertyPath: unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BoltTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 407644684857274096, guid: b7bb5c13283898c4aaa208150f965aed, type: 3}
+      propertyPath: unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4301025836312472341, guid: b7bb5c13283898c4aaa208150f965aed, type: 3}
       propertyPath: m_Name
       value: Player
@@ -527,11 +580,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4301025836312472344, guid: b7bb5c13283898c4aaa208150f965aed, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4301025836312472344, guid: b7bb5c13283898c4aaa208150f965aed, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.8
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 4301025836312472344, guid: b7bb5c13283898c4aaa208150f965aed, type: 3}
       propertyPath: m_LocalPosition.z
@@ -654,6 +707,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1673474225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 377273419}
+  m_Layer: 0
+  m_Name: Recovery GameObject (377273419)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1699728945
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,7 +801,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1699728945}
   m_LocalRotation: {x: 0.0494769, y: -0.010487151, z: 0.0005194342, w: 0.9987201}
-  m_LocalPosition: {x: -7.6887484, y: -1.8033618, z: -5.016357}
+  m_LocalPosition: {x: 0.46101797, y: -2.0033617, z: -5.0163617}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1531642576}
@@ -833,7 +902,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2137932997}
   m_LocalRotation: {x: 0.0494769, y: -0.010487151, z: 0.0005194342, w: 0.9987201}
-  m_LocalPosition: {x: -7.6887484, y: -1.8033618, z: -5.016357}
+  m_LocalPosition: {x: 0.46101797, y: -2.0033617, z: -5.0163617}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 378089143}
