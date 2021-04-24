@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e0aed88e259f9468bed3f2debd77ea, type: 3}
+  m_Name: CityDB
+  m_EditorClassIdentifier: 
+  levels:
+  - {fileID: 11400000, guid: 0054256004df7e748864198b9f474b73, type: 2}
+  - {fileID: 11400000, guid: f03239d5c6e72d04aabbe8e739e494dc, type: 2}
+  - {fileID: 11400000, guid: abb9a4f374635e8419aefc8904c9861d, type: 2}
+  - {fileID: 11400000, guid: 3b1e62f95bec72f4d9080fc29e6e25f4, type: 2}
+  menus: []
+  CurrentLevelIndex: 1
+  _AreaType: 1
+  nextDB: {fileID: 0}

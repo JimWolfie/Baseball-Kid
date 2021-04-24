@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e0aed88e259f9468bed3f2debd77ea, type: 3}
+  m_Name: CastleDB
+  m_EditorClassIdentifier: 
+  levels:
+  - {fileID: 11400000, guid: e70e232785e34bc4e9c48f38c72f7fe2, type: 2}
+  - {fileID: 11400000, guid: 87a01b56ea87ad24fbc859688f90a427, type: 2}
+  - {fileID: 11400000, guid: 51230d0e99e8ca74d9c7e067b1022f04, type: 2}
+  - {fileID: 11400000, guid: 00e99a85984b749448e984a23776e19d, type: 2}
+  menus: []
+  CurrentLevelIndex: 1
+  _AreaType: 4
+  nextDB: {fileID: 0}

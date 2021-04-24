@@ -35,5 +35,47 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/options_ui/_Pause/Pause_Menu.unity
     guid: 477613757b9a13043a0756b0d0630957
+  - enabled: 1
+    path: Assets/Scenes/Levels/Forest/Base3_Forest.unity
+    guid: feaacc8cf71537c4cb29735bd5411fc1
+  - enabled: 1
+    path: Assets/Scenes/Levels/Forest/Base4_Forest.unity
+    guid: c1e23a0d9b13c664d9d4f060a93b9ed4
+  - enabled: 1
+    path: Assets/Scenes/Levels/City/Base1_City.unity
+    guid: f78a50e4c3322d34dbc18aaa6ac165dd
+  - enabled: 1
+    path: Assets/Scenes/Levels/City/Base2_City.unity
+    guid: 46378175a00f51a4c96714de386c32b5
+  - enabled: 1
+    path: Assets/Scenes/Levels/City/Base3_City.unity
+    guid: 42475670a6dca1245b7d0b137b6af499
+  - enabled: 1
+    path: Assets/Scenes/Levels/City/Base4_City.unity
+    guid: 1a6114f30fa67b34788ef2bf37193954
+  - enabled: 1
+    path: Assets/Scenes/Levels/ForestNight/Base1_ForestNight.unity
+    guid: 38ce85b54b661a74380ee3b1bf8295b2
+  - enabled: 1
+    path: Assets/Scenes/Levels/ForestNight/Base2_ForestNight.unity
+    guid: 2e2542252eacd264a8d2f118b98cf6ab
+  - enabled: 1
+    path: Assets/Scenes/Levels/ForestNight/Base3_ForestNight.unity
+    guid: 184e668758c0618489cab043023730f8
+  - enabled: 1
+    path: Assets/Scenes/Levels/ForestNight/Base4_ForestNight.unity
+    guid: 31d3ce775ec5a4541b93656cab883706
+  - enabled: 1
+    path: Assets/Scenes/Levels/Castle/Base1_Castle.unity
+    guid: a70325ae0b961f74f96d3da63788551d
+  - enabled: 1
+    path: Assets/Scenes/Levels/Castle/Base2_Castle.unity
+    guid: 04bf0588993ac2d4da2f692227efe61d
+  - enabled: 1
+    path: Assets/Scenes/Levels/Castle/Base3_Castle.unity
+    guid: 4064d07850610064981dce8b0f0855ff
+  - enabled: 1
+    path: Assets/Scenes/Levels/Castle/Base4_Castle.unity
+    guid: c3fe6111124fed643af7e865cb046e30
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: aa9ca5fac52331e469576fc8b3dd7753, type: 2}
