@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e0aed88e259f9468bed3f2debd77ea, type: 3}
+  m_Name: ForestNightDB
+  m_EditorClassIdentifier: 
+  levels:
+  - {fileID: 11400000, guid: cec2d9f11a1024d4b99651edc5b725bb, type: 2}
+  - {fileID: 11400000, guid: d1f005767678d2343853c8c34bf6a4b7, type: 2}
+  - {fileID: 11400000, guid: d7d95b05a455b38469c8d23d25038475, type: 2}
+  - {fileID: 11400000, guid: 582612b304d6af14d80532900a3e96b5, type: 2}
+  menus: []
+  CurrentLevelIndex: 1
+  _AreaType: 2
+  nextDB: {fileID: 0}
