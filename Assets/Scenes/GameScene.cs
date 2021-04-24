@@ -8,5 +8,5 @@ public class GameScene: ScriptableObject
     public string sceneName;
     public string shortDescription;
 
-   
+    public string _name => sceneName;
 }

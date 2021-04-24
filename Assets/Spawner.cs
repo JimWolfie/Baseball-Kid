@@ -1,6 +1,8 @@
 using System.Collections;
 using UnityEngine;
 using SOEvents;
+using Bolt;
+using System;
 
 public class Spawner : MonoBehaviour
 {
@@ -16,35 +18,52 @@ public class Spawner : MonoBehaviour
 
     public VoidEvent allDead;
 
+    private GameObject lastprefab = null;
+
     private void OnEnable()
     {
         index =0;
         totalE = _enemyList.enemyListering.Count;
     }
-   
-   
+    private void Start()
+    {
+         SpawnNew(0);
+    }
+
 
     void SpawnNew(int i)
     {
         
         var q = _enemyList.enemyListering[i];
         var u = q.enemy;
-        Debug.Log(q.enemy.name);
-        Debug.Log(q.x);
-        Debug.Log(q.y);
-        
-        Instantiate(u, new Vector3(q.x, q.y, 0), Quaternion.identity);
+
+        if(lastprefab != null)
+        {
+           // Destroy(lastprefab);
+        }
+        var g =Instantiate(u, new Vector3(q.x, q.y, 0), Quaternion.identity, gameObject.transform);
+        lastprefab = g;
 
     }
+    public void allClear()
+    {
 
-    
+       allDead.Raise();
+       
+    }
+
     public void somethingDied()
     {
         
         if(index >= totalE)
         {
-            allDead.Raise();
-        
+            if(lastprefab != null)
+            {
+                //Destroy(lastprefab);
+            }
+            allClear();
+            
+            
         } else
         {
             SpawnNew(index);
