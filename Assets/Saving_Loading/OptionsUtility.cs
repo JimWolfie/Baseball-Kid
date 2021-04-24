@@ -11,91 +11,15 @@ public class OptionsUtility: MonoBehaviour
 {
     [SerializeField]
     public OptionsSO options;
+    public ScenesData db;
+
+
     //public VoidEvent toggleOptions;
     //public  VoidEvent togglePause;
+    public AreaType _AreaType;
 
-    public bool isPaused => options.isPaused;
-    public bool isOptions => options.isOptions;
-    public int timeScalePrefs => options.timeScalePrefs;
 
-    public void Pause()
-    {
-        if(isPaused == true)
-        {
-            StartCoroutine(LoadUnPause());
-            Time.timeScale = timeScalePrefs;
-            //togglePause.Raise();
-            
-        }
-        if(isPaused == false)
-        {
-            Time.timeScale = 0;
-            //togglePause.Raise();
-            StartCoroutine(LoadPause());
-        }
-        
-    }
-    public void Options()
-    {
-        if(isPaused == true)
-        {
-            StartCoroutine(LoadUnOptions());
-            Time.timeScale = timeScalePrefs;
-            //toggleOptions.Raise();
-
-        }
-        if(isPaused == false)
-        {
-            Time.timeScale = 0;
-            //toggleOptions.Raise();
-            StartCoroutine(LoadOptions());
-        }
-
-    }
    
-    
-    public  IEnumerator LoadPause()
-    {
-        AsyncOperation loader = SceneManager.LoadSceneAsync("Pause_Menu", LoadSceneMode.Additive);
-
-        while(!loader.isDone)
-        {
-            yield return null;
-        }
-
-    }
-     public IEnumerator LoadUnPause()
-    {
-        AsyncOperation loader = SceneManager.UnloadSceneAsync("Pause_Menu");
-
-
-        while(!loader.isDone)
-        {
-            yield return null;
-        }
-
-    }
-
-    public IEnumerator LoadOptions()
-    {
-        AsyncOperation loader = SceneManager.LoadSceneAsync("Options", LoadSceneMode.Additive);
-
-        while(!loader.isDone)
-        {
-            yield return null;
-        }
-
-    }
-    public IEnumerator LoadUnOptions()
-    {
-        AsyncOperation loader = SceneManager.UnloadSceneAsync("Options");
-
-
-        while(!loader.isDone)
-        {
-            yield return null;
-        }
-    }
 
         void SetSpeed(int preferedScale)
     {
