@@ -65,5 +65,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/ForestNight/Base4_ForestNight.unity
     guid: 31d3ce775ec5a4541b93656cab883706
+  - enabled: 1
+    path: Assets/Scenes/Levels/Castle/Base1_Castle.unity
+    guid: a70325ae0b961f74f96d3da63788551d
+  - enabled: 1
+    path: Assets/Scenes/Levels/Castle/Base2_Castle.unity
+    guid: 04bf0588993ac2d4da2f692227efe61d
+  - enabled: 1
+    path: Assets/Scenes/Levels/Castle/Base3_Castle.unity
+    guid: 4064d07850610064981dce8b0f0855ff
+  - enabled: 1
+    path: Assets/Scenes/Levels/Castle/Base4_Castle.unity
+    guid: c3fe6111124fed643af7e865cb046e30
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: aa9ca5fac52331e469576fc8b3dd7753, type: 2}
