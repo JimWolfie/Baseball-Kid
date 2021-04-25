@@ -218,6 +218,7 @@ GameObject:
   - component: {fileID: 432922876996232914}
   - component: {fileID: 1128673925}
   - component: {fileID: 407644684857274096}
+  - component: {fileID: 6779874096711503871}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -442,7 +443,47 @@ MonoBehaviour:
   gameEvent: {fileID: 11400000, guid: af69c6cb35a5c2c4e809b0a4d61c60be, type: 2}
   unityEventResponse:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 432922876996232914}
+        m_TargetAssemblyTypeName: BoltTrigger, Assembly-CSharp
+        m_MethodName: death
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6779874096711503871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4301025836312472341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75c9913b049d32242b5c708d8c9be008, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: f8676adba381c9442a24207e58960b4f, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 432922876996232914}
+        m_TargetAssemblyTypeName: BoltTrigger, Assembly-CSharp
+        m_MethodName: SetStartPos
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4301025836680811768
 GameObject:
   m_ObjectHideFlags: 0

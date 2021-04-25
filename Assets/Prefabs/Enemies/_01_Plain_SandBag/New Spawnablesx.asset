@@ -9,11 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47e0aed88e259f9468bed3f2debd77ea, type: 3}
-  m_Name: NoirDB
+  m_Script: {fileID: 11500000, guid: d0dc36a4a555bd14e9e34e136416ffab, type: 3}
+  m_Name: New Spawnablesx
   m_EditorClassIdentifier: 
-  levels: []
-  menus: []
-  CurrentLevelIndex: 1
-  _AreaType: 6
-  nextDB: {fileID: 11400000, guid: 073c749c03c7d0b49a09632fb61a3b1b, type: 2}
+  enemyArray: []

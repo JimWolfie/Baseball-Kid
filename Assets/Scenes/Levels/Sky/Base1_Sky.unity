@@ -18637,6 +18637,8 @@ MonoBehaviour:
   index: 0
   totalE: 0
   delay_between_waves: 0
+  startPos: {fileID: 663350775}
+  setPlayerPos: {fileID: 11400000, guid: f8676adba381c9442a24207e58960b4f, type: 2}
   allDead: {fileID: 11400000, guid: bb1ddb1906599af4ebfe96c20255bead, type: 2}
 --- !u!4 &8013899891007380201
 Transform:
@@ -18664,6 +18666,7 @@ GameObject:
   - component: {fileID: 8013899891007380200}
   - component: {fileID: 8013899891007380215}
   - component: {fileID: 8013899891007380214}
+  - component: {fileID: 8013899891007380216}
   m_Layer: 0
   m_Name: SceneHandler
   m_TagString: Untagged
@@ -18718,6 +18721,34 @@ MonoBehaviour:
       - m_Target: {fileID: 11400000, guid: 4b75aa0f279ca60449c52704f91bac23, type: 2}
         m_TargetAssemblyTypeName: ScenesData, Assembly-CSharp
         m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8013899891007380216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8013899891007380213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0672ee052d6535245b35cf30ab7d4596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 8af0fd53ac8db3e4e94bb7f91790dd68, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 4b75aa0f279ca60449c52704f91bac23, type: 2}
+        m_TargetAssemblyTypeName: ScenesData, Assembly-CSharp
+        m_MethodName: RestartLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

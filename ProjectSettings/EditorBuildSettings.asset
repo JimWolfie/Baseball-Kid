@@ -77,5 +77,53 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Castle/Base4_Castle.unity
     guid: c3fe6111124fed643af7e865cb046e30
+  - enabled: 1
+    path: Assets/Scenes/Levels/Sky/Base4_Sky.unity
+    guid: 9eb13485c91be5244867e128979b5866
+  - enabled: 1
+    path: Assets/Scenes/Levels/Sky/Base3_Sky.unity
+    guid: 542dd9fa867686e46822168d868642b1
+  - enabled: 1
+    path: Assets/Scenes/Levels/Sky/Base2_Sky.unity
+    guid: cb81fd0cdd69c3d42b437e8e75c2c0f8
+  - enabled: 1
+    path: Assets/Scenes/Levels/Sky/Base1_Sky.unity
+    guid: dd2ce5da92cedf54d8714d444325ff7a
+  - enabled: 1
+    path: Assets/Scenes/Levels/Space/Base1_Space.unity
+    guid: 5d0fd4ad7d4b0894593259e06532923e
+  - enabled: 1
+    path: Assets/Scenes/Levels/Space/Base2_Space.unity
+    guid: 3d36c6a961b01084ba49666b6c0c1be4
+  - enabled: 1
+    path: Assets/Scenes/Levels/Space/Base3_Space.unity
+    guid: baf50b5a8b37f804a8ceff01051ec78c
+  - enabled: 1
+    path: Assets/Scenes/Levels/Space/Base4_Space.unity
+    guid: 2483bd57389959c4183566e8607f5651
+  - enabled: 1
+    path: Assets/Scenes/Levels/Noir/Base1_Noir.unity
+    guid: e93fe37e0bc2af743ae3bf57cd6aedbb
+  - enabled: 1
+    path: Assets/Scenes/Levels/Noir/Base2_Noir.unity
+    guid: e82bc274dda0d954db5515a9b7afbade
+  - enabled: 1
+    path: Assets/Scenes/Levels/Noir/Base3_Noir.unity
+    guid: cd13a060631298743a58f33210974256
+  - enabled: 1
+    path: Assets/Scenes/Levels/Noir/Base4_Noir.unity
+    guid: ca9be1a513da8f54c8b3290270925b32
+  - enabled: 1
+    path: Assets/Scenes/Levels/Mine/Base4_Mine.unity
+    guid: 984f0fc8e4edb0144818a35169755f18
+  - enabled: 1
+    path: Assets/Scenes/Levels/Mine/Base3_Mine.unity
+    guid: de20d0157c8b9d14cbc4c481dac34ddb
+  - enabled: 1
+    path: Assets/Scenes/Levels/Mine/Base2_Mine.unity
+    guid: 8b1bdb3e0cd146a4db98b835a3dd3e60
+  - enabled: 1
+    path: Assets/Scenes/Levels/Mine/Base1_Mine.unity
+    guid: d7a9b37b2d8789f4fab881f47e0fad92
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: aa9ca5fac52331e469576fc8b3dd7753, type: 2}

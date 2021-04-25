@@ -9,11 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47e0aed88e259f9468bed3f2debd77ea, type: 3}
-  m_Name: NoirDB
+  m_Script: {fileID: 11500000, guid: 8fce40fb528fe794abc1f39a632d8f23, type: 3}
+  m_Name: Reset_Level
   m_EditorClassIdentifier: 
-  levels: []
-  menus: []
-  CurrentLevelIndex: 1
-  _AreaType: 6
-  nextDB: {fileID: 11400000, guid: 073c749c03c7d0b49a09632fb61a3b1b, type: 2}

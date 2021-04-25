@@ -12,6 +12,8 @@ public class Spawner : MonoBehaviour
     [SerializeField]private int totalE;
     public float delay_between_waves;
     
+    public GameObject startPos;
+    public Vector3Event setPlayerPos;
     
     //public string Next_Scene_By_Name;
     //List<AsyncOperation> scenesToLoad = new List<AsyncOperation>();
@@ -28,6 +30,7 @@ public class Spawner : MonoBehaviour
     private void Start()
     {
          SpawnNew(0);
+         setPlayerPos.Raise(startPos.transform.position);
     }
 
 
@@ -70,4 +73,6 @@ public class Spawner : MonoBehaviour
         }
         index++;
     }
+
+    
 }

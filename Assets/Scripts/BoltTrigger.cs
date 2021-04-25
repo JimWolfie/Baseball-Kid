@@ -23,8 +23,8 @@ public class BoltTrigger : MonoBehaviour
         SceneManager.LoadSceneAsync("Game_Over", LoadSceneMode.Additive);
         
     }
-    public void test()
+    public void SetStartPos(Vector3 pos)
     {
-        
+        gameObject.transform.position = pos;
     }
 }
