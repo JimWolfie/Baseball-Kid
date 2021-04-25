@@ -125,5 +125,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Mine/Base1_Mine.unity
     guid: d7a9b37b2d8789f4fab881f47e0fad92
+  - enabled: 1
+    path: Assets/Game_Over.unity
+    guid: 60964528c77b22a4e99f06aa2ab9e531
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: aa9ca5fac52331e469576fc8b3dd7753, type: 2}

@@ -1,16 +1,13 @@
-using System.Collections;
 using UnityEngine;
-using SOEvents;
-using Bolt;
-using System;
+using SOEvents; //scriptable object event ssytem. 
 
 public class Spawner : MonoBehaviour
 {
-    public testing_container _enemyList;
+    public testing_container _enemyList; //list of pefab scriptable objects
    
-    [SerializeField]private int index;
+    [SerializeField]private int index; //set to 0 on enable
     [SerializeField]private int totalE;
-    public float delay_between_waves;
+    public float delay_between_waves; //not used
     
     public GameObject startPos;
     public Vector3Event setPlayerPos;
@@ -18,13 +15,13 @@ public class Spawner : MonoBehaviour
     //public string Next_Scene_By_Name;
     //List<AsyncOperation> scenesToLoad = new List<AsyncOperation>();
 
-    public VoidEvent allDead;
+    public VoidEvent allDead; //tells the scene db to load the next level
 
-    private GameObject lastprefab = null;
+
 
     private void OnEnable()
     {
-        index =0;
+        index =0; //when we have no enemies in the level we move on
         totalE = _enemyList.enemyListering.Count;
     }
     private void Start()
@@ -40,30 +37,22 @@ public class Spawner : MonoBehaviour
         var q = _enemyList.enemyListering[i];
         var u = q.enemy;
 
-        if(lastprefab != null)
-        {
-           // Destroy(lastprefab);
-        }
         var g =Instantiate(u, new Vector3(q.x, q.y, 0), Quaternion.identity, gameObject.transform);
-        lastprefab = g;
-
+       
     }
     public void allClear()
     {
+        allDead.Raise();
 
-       allDead.Raise();
-       
+
     }
-
+    
     public void somethingDied()
     {
         
         if(index >= totalE)
         {
-            if(lastprefab != null)
-            {
-                //Destroy(lastprefab);
-            }
+           
             allClear();
             
             

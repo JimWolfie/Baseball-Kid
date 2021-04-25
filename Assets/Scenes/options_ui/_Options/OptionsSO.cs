@@ -1,3 +1,4 @@
+using SOEvents;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,6 +11,7 @@ public class OptionsSO : ScriptableObject
     public int width;
     public int hieght;
     public FullScreenMode windowMode= FullScreenMode.Windowed;
+    public VoidEvent restart_level;
 
 
     public bool _isPaused
@@ -73,7 +75,7 @@ public class OptionsSO : ScriptableObject
 
         }
         
-        else 
+        else if(_isOptions == false) 
         {
             _isOptions = true;
             LoadOptions();
@@ -107,7 +109,7 @@ public class OptionsSO : ScriptableObject
 
     public void Restart()
     {
-
+        restart_level.Raise();
     }
 
 

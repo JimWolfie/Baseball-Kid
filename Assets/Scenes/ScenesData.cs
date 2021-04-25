@@ -42,7 +42,7 @@ public class ScenesData: ScriptableObject
         else
         {
             CurrentLevelIndex =1;
-            Debug.Log("we did it all died");
+            
 
             NewGame();
         }

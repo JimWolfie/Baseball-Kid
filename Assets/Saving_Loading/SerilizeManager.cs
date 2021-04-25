@@ -32,7 +32,7 @@ public static class SerilizeManager
                 saveable.LoadFromSaveData(sd);
             }
 
-            Debug.Log("Load complete");
+            
         }
     }
 

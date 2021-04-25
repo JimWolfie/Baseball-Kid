@@ -47,7 +47,7 @@ public class ItemDestroyer : MonoBehaviour
     public void Destroy()
     {
         
-        Debug.Log("event destroy called");
+        //Debug.Log("event destroy called");
         inventory.InventoryController.RemoveAt(slotIndex);
             gameObject.SetActive(false);
         

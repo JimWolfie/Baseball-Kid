@@ -20,4 +20,4 @@ MonoBehaviour:
   menus: []
   CurrentLevelIndex: 1
   _AreaType: 4
-  nextDB: {fileID: 11400000, guid: 158899618bac9b944aa98c355c1101c9, type: 2}
+  nextDB: {fileID: 11400000, guid: 5873cd36b42434a4a8ece33e6d63da2c, type: 2}
