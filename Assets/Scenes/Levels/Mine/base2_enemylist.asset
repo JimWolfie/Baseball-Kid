@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b432ce67c6600f24990e91a8d7925e89, type: 3}
+  m_Name: base2_enemylist
+  m_EditorClassIdentifier: 
+  enemyListering:
+  - enemy: {fileID: 117195163965558782, guid: 94d90a57efa74104892c27f0c4ef5209, type: 3}
+    x: 18.23
+    y: 49.81
+  - enemy: {fileID: 4430629973352155803, guid: 5bf914a4f9b905e43b6cbfde6590a2de, type: 3}
+    x: -7.9
+    y: 54.87
+  - enemy: {fileID: 4430629973352155803, guid: 5bf914a4f9b905e43b6cbfde6590a2de, type: 3}
+    x: 13.91
+    y: 49.73
+  - enemy: {fileID: 4430629973352155803, guid: 5bf914a4f9b905e43b6cbfde6590a2de, type: 3}
+    x: 22.15
+    y: 39.85
+  - enemy: {fileID: 4430629973352155803, guid: 5bf914a4f9b905e43b6cbfde6590a2de, type: 3}
+    x: 17.87
+    y: 39.85
+  - enemy: {fileID: 4430629973352155803, guid: 5bf914a4f9b905e43b6cbfde6590a2de, type: 3}
+    x: 44.57
+    y: 27.46
+  - enemy: {fileID: 4430629973352155803, guid: 5bf914a4f9b905e43b6cbfde6590a2de, type: 3}
+    x: 42.43
+    y: 18.23
+  - enemy: {fileID: 4430629973352155803, guid: 5bf914a4f9b905e43b6cbfde6590a2de, type: 3}
+    x: 23.7
+    y: -8.41
+  - enemy: {fileID: 4430629973352155803, guid: 5bf914a4f9b905e43b6cbfde6590a2de, type: 3}
+    x: 16.87
+    y: -8.41
