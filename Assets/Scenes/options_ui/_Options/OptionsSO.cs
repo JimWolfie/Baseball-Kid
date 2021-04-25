@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -108,13 +105,18 @@ public class OptionsSO : ScriptableObject
 
     }
 
+    public void Restart()
+    {
+
+    }
+
 
     public void Quit(){
 #if UNITY_EDITOR
-        Debug.Log("hello World");
+        UnityEditor.EditorApplication.isPlaying = false;
 #endif
 #if UNITY_STANDALONE
-    
+
         Application.Quit();
 
 #endif

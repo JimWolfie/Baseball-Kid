@@ -80,29 +80,29 @@ public class ScenesData: ScriptableObject
     public void LoadMainMenu()
     {
         SceneManager.LoadSceneAsync("Loader");
-        SceneManager.LoadSceneAsync(menus[(int)Type.Main_Menu]._name, LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync("Main_Menu");
     }
     //Load Pause Menu
     public void LoadPauseMenu()
     {
         
-        SceneManager.LoadSceneAsync(menus[(int)Type.Pause_Menu]._name, LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync("Pause_Menu", LoadSceneMode.Additive);
     }
 
 
     public void LoadOptionsMenu()
     {
         
-        SceneManager.LoadSceneAsync(menus[(int)Type.Options_Menu]._name, LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync("Options", LoadSceneMode.Additive);
     }
     public void UnLoadPauseMenu()
     {
-        SceneManager.UnloadSceneAsync(menus[(int)Type.Pause_Menu]._name);
+        SceneManager.UnloadSceneAsync("Pause_Menu");
     }
 
     public void UnLoadOptionsMenu()
     {
-        SceneManager.UnloadSceneAsync(menus[(int)Type.Options_Menu]._name);
+        SceneManager.UnloadSceneAsync("Options");
     }
 
     

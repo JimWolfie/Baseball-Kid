@@ -1,11 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Bolt;
-using Ludiq;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-using SOEvents;
 
 public class OptionsUtility: MonoBehaviour
 {
@@ -123,9 +116,30 @@ public class OptionsUtility: MonoBehaviour
 
 
     #region attack dmg
+    public void AttackStatChange( int value)
+    {
 
+    }
+    
 
     #endregion
 
-    
+    public void MasterVolumeSlider(int value)
+    {
+        //placeholder
+    }
+    public void sfxSlider (float value)
+    {
+        //placeholder
+
+    }
+    public void bgMusicVolume(float value)
+    {
+        //placeholder
+    }
+    public void menuSFXVolume(float value)
+    {
+        //placeholder
+    }
+
 }
