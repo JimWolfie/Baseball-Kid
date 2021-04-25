@@ -18469,7 +18469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9aea055eb3f66b488316b35e9f28556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyList: {fileID: 11400000, guid: eb4ea292a0b97ea4cb6df27fa9ba0a80, type: 2}
+  _enemyList: {fileID: 11400000, guid: 9b41e5b5be64fd041a990d8ec4825d0f, type: 2}
   index: 0
   totalE: 0
   delay_between_waves: 0
