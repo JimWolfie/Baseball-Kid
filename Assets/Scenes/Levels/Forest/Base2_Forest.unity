@@ -248,7 +248,7 @@ MonoBehaviour:
   unityEventResponse:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 03ef2592bea30a947a48e4badc275fb7, type: 2}
+      - m_Target: {fileID: 11400000, guid: e80db2b27da7e4d4f8715ed65754e6c8, type: 2}
         m_TargetAssemblyTypeName: ScenesData, Assembly-CSharp
         m_MethodName: RestartLevel
         m_Mode: 1
