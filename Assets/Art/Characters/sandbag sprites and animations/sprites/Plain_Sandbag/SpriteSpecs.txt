@@ -1,0 +1,21 @@
+Canvas size 50 x 37(same as hero idle)
+
+Palette:
+base - cbdbfc
+highlight - f2f6ff
+shadow - 9badb7i
+face - 2d3835
+
+actual sizes:
+
+stand - 13x28
+facedown - 28x13
+fling - 35x29
+getup - 25x23
+jump - 21x30
+hurt - 18x29
+knockup - 17x32
+slamdown - 19x22
+squash - 18x25
+deadtop - 13x17
+deadbottom - 13x14
