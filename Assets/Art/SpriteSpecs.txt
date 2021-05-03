@@ -1,0 +1,1 @@
+Most character sprites were made using a canvas size of 50 x 37. Any new sprites should be a similar size and have the Texture Type set to Sprite(2D and UI) and have the filter mode set to Point(no filter).
