@@ -1,2 +1,3 @@
-# GDEV290-Sprint2
+# Baseball Kid video game
+#Forked from school project repo
  
